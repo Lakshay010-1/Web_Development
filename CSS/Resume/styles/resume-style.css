@@ -1,0 +1,124 @@
+body{
+    background-color:black;
+    font-family: Ledger,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: smaller;
+}
+h2{
+    margin-bottom: 10px;
+}
+hr {
+    border: none;
+    border-top: 3px double #333;
+    border-style: dashed none;
+    color: #333;
+    height: 1px;
+    overflow: visible;
+    text-align: center;
+    width: 20%;
+    margin: 20px auto;
+}
+hr::after {
+    background: #EEEEEE;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+
+a{
+    color: #4379F2;
+    font-weight: bold;
+}
+a:hover{
+    color: #CB9DF0;
+    
+}
+a:visited{
+    color: #563A9C;
+}
+a:active{
+    color: #62825D ;
+
+}
+
+::selection{
+    background-color: #ABBA7C;
+    color: black;
+}
+
+.resume{
+    background-color: #EEEDEB; 
+    margin: 0 17%;
+    padding: 5%;
+}
+.no-bullet{
+    list-style-type:none;
+}
+.name{
+    font-family:Gloock, serif;
+    color:#e48c00;
+    font-size: xx-large;
+    font-weight: normal;
+}
+.headings{
+    color:#EA9C1B;
+    font-family:Yrsa, 'Times New Roman', Times, serif;
+    font-size:x-large;
+}
+.social-logo{
+    height: 20px;
+}
+.edu-border tr td{
+    border: 1px solid black;
+}
+.edu-border td{
+    padding-right: 10px;
+}
+.project-ul{
+    margin-top: 0;
+}
+.edu-ul{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+#profile-logo{
+    background-color: #343131;
+    height: 13rem;
+    border-radius:10%;
+    margin-right: 15px;
+}
+#profile-logo:hover{
+    background: #41444B; 
+}
+
+
+
+@media (max-width:800px){
+    .resume{
+        margin: 0 10%;
+    }
+    #profile-logo{
+        height:10rem;
+    }
+}
+@media (max-width:640px){
+    body{
+        margin:0;
+        background-color: #EEEDEB;
+    }
+    .resume{
+        margin: 0;
+    }
+    #profile-logo{
+        height:8rem;
+    }
+}
+@media (max-width:285px){
+    
+    #profile-logo{
+        height:6rem;
+    }
+}
