@@ -1,0 +1,66 @@
+body{
+    background-color: #EEEEEE;
+    margin:0;
+    color:#3C3D37;
+    font-family: "Gentium Plus";
+}
+header{
+    background-color: black;
+    padding: 1%;
+}
+sup{
+    font-size: 0.4em;
+}
+div{    
+    padding: 1%;
+    margin: 1% 4%;
+}
+#gallery img{
+    padding: 0 2%;  
+    height: 200px;
+}
+.hero{
+    padding: 1%;
+    margin: 1% 4%;
+}
+.heading{
+    text-align: center;
+    font-family: "Barlow Semi Condensed";
+    color: #37AFE1;
+    margin-bottom: 5px;
+}
+.rockRepre table, td {
+    border: 0;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+nav table{
+    padding: 1%;
+}
+nav a{
+    font-size: 1.17em;
+    font-weight: bold;
+}
+a:link{
+    text-decoration: none;                
+    color:#5fae52;
+}
+a:hover{
+    text-decoration: underline;    
+    color: #347928;            
+}
+a:visited{
+    color: #914F1E;
+    text-decoration: underline;
+}
+a:active{
+    text-decoration:none;
+}
+footer div{
+    background-color: black;
+    padding:1%;
+    margin: 0;
+}
+footer div p{
+    text-align: center;
+}
