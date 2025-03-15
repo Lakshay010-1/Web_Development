@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Ledger&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap');
+
+body {
+    font-family: Ledger, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #000000;
+    font-size:0.9rem;
+    margin: 0;
+}
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    border-style: dashed none;
+    height: 1px;
+    overflow: visible;
+    text-align: center;
+    width: 20%;
+    margin: 30px auto;
+}
+hr::after {
+    background: #EEEEEE;
+    content: '§';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
+}
+a{
+    color: #4379F2;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    color: #CB9DF0;
+    
+}
+a:visited{
+    color: #563A9C;
+}
+a:active{
+    color: #62825D ;
+    
+}
+textarea {
+    resize: vertical;
+    width: 80%;
+    border-radius: 0.5rem;
+    border: 1.6px solid black;
+}
+
+input {
+    width: 80%;
+    border-radius: 0.5rem;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+.heading{
+    color:#EA9C1B;
+    font-family:Yrsa, 'Times New Roman', Times, serif;
+    font-size:x-large;
+}
+.profile-pic {
+    height: 13rem;
+    border-radius: 5%;
+    border: 3px solid #57B4BA;
+    align-self: center;
+}
+.profile-pic:hover {
+    border: 3px solid rgb(0, 0, 0);
+}
+.social-media {
+    display: flex;
+    gap: 8px;
+}
+.social-media-logo {
+    height: 20px;
+}
+
+
+[placeholder] {
+    padding: 1rem;
+}
+::selection{
+    background-color: #ABBA7C;
+    color: black;
+}
+
+
+#resume-container {
+    box-sizing: border-box;
+    background-color: #EEEDEB;
+    padding: 4rem;
+    width: 65%;
+    border-radius: 0.5%;
+}
+#container {
+    display: flex;
+    justify-content: center;
+}
+#name{
+    color: #e48c00;    
+    font-size: xx-large;
+    font-weight:500;
+}
+#header {
+    display: flex;
+    gap: 1.5rem;
+}
+#edu-container {
+    padding-left: 40px;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1.5fr 0.75fr 0.75fr;
+    justify-content: start;
+}
+#edu-container p,
+#edu-container h3 {
+    margin-bottom: 0;
+}
+#projects-container {
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    padding-left: 40px;
+}
+#footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footer-container h4,
+#footer-container p {
+    margin-bottom: 0;
+}
+#info {
+    display: grid;
+    grid-template-columns: 1.25fr 0.5fr 1.25fr;
+}
+#contact-info {
+    display: grid;
+    grid-template-columns: 1.25fr 0.5fr 1.25fr;
+    gap: 1rem;
+}
+#submit-button {
+    grid-column: 3/4;
+    background-image: linear-gradient(#FFC229,#c9b789);
+    justify-self: center;
+    width: 70%;
+    height: 2.5rem; 
+    text-align: center;
+    border-radius: 2rem;
+    font-weight: 500;
+    font-size: larger;
+}
+#submit-button:hover{
+    background-image: linear-gradient(#0d3571,#4e8ceb);
+    color: #ffbb00;
+    text-decoration: underline;
+}
+@media (max-width:1000px) {
+    #resume-container{
+        width: 70%;
+    }
+}
+@media (max-width:900px) {
+    #resume-container{
+        width: 75%;
+    }
+}
+@media (max-width:800px) {
+    #resume-container{
+        width: 80%;
+    }
+}
+@media (max-width:750px) {
+    #resume-container{
+        width: 85%;
+    }
+}
+@media (max-width:700px) {
+    #resume-container{
+        width: 90%;
+    }
+}
+@media (max-width:650px) {
+    #resume-container{
+        width: 95%;
+    }
+}
+@media (max-width:600px) {
+    #resume-container{
+        width: 100%;
+    }
+}
+@media (max-width:550px){
+    #header {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    #name{
+        text-align: center;
+    }
+    .social-media{
+        justify-content: center;
+    }
+    .head-tag{
+        text-align: center;
+    }
+    #projects-container{
+        grid-template-columns:1fr;
+    }
+}
