@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Bungee+Tint&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+body {
+    background-color: #0F0F0F;
+    color: #F8EDED;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: "Source Code Pro", Arial, Helvetica, sans-serif;
+    min-width: 345px;
+}
+h2 {
+    font-size: 2rem;
+    color: #AF47D2;
+    margin-bottom: 0.625rem;
+}
+h3 {
+    color: #FF6500;
+}
+hr {
+    border: dashed #B4B4B8 2px;
+    border-bottom: none;
+    width: 10%;
+    margin: 3.125rem auto;
+}
+a {
+    color: #D4BEE4;
+    margin: 0.625rem;    
+    margin-left: 0;
+    margin-right: 1rem;
+    transition-property: color;
+    text-decoration:none;
+    transition-duration: 0.5s;
+}
+a:hover, .bottom-container a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+
+
+::selection {
+    color: #240A34;
+    background-color: #EB5B00;
+    /* background-color: #D4BEE4; */
+}
+
+
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle-container {
+    position: relative;
+    padding: 1.5rem;
+    padding-bottom: 3.125rem;
+}
+
+.bottom-container {
+    background-color: #ff6500;
+    padding: 3.125rem 0 1.3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.bottom-container a{
+    color: #432E54;
+}
+.intro-desc {
+    width: 45%;
+    line-height: 1.5;
+}
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-row {
+    width: 50%;
+    line-height: 1.5;
+    display: flex;
+    margin: 1rem 0;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+.project-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-img {
+    width: 12rem;
+    height: 10rem;
+    border-radius: 20%;
+    border: 2px solid #0F0F0F;
+    align-self: center;
+}
+.skill-img:hover {
+    border: 3px solid #FF6500;
+}
+.skills-desc li::marker {
+    /* list-style-type: none; */
+    color: #686D76;
+}
+.skill-link {
+    color: #FFCF9D;
+    margin: auto 0;
+}
+.skill-link:hover {
+    color: #8FD14F;
+}
+.skill-link:active {
+    color: #FFD93D;
+}
+.skill-link:visited {
+    color: #686D76;
+}
+.hobbies-desc li::marker {
+    color: #686D76;
+}
+.profile-img {
+    height: 15.625rem;
+    width: 12.5rem;    
+    border-radius: 15%;
+    margin-top: 2.5rem;
+}
+.profile-img:hover {
+    background-color: #817b7b;
+}
+.profile-doodle{
+    height: 5rem;
+}
+.name {
+    font-family: "Bungee Tint", Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    margin: 0;
+    padding: 0 1rem;
+}
+.desc {
+    font-family: "Bungee Spice", Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+.title {
+    color: #FF6500;
+}
+.cloud {
+    position: absolute;
+    height: 8rem;
+    width: 16rem;
+}
+.right-cloud {
+    right: 2rem;
+    bottom: 15rem;
+}
+.left-cloud {
+    top: 10rem;
+    left: 5rem;
+}
+.volcano {
+    width: 38rem;
+    height: 34.5rem;
+}
+.left-lava-flow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 60px;
+}
+.right-lava-flow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 60px;
+}
+.bottom-fire {
+    position: absolute;
+    height: 500px;
+    bottom: 0;
+    margin: 0 auto;
+    right: 20%;
+    align-items: center;
+    z-index: -1;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.btn {
+    background: #FE7A36;
+    background-image: -webkit-linear-gradient(top, #FE7A36, #E36414);
+    background-image: -moz-linear-gradient(top, #FE7A36, #E36414);
+    background-image: -ms-linear-gradient(top, #FE7A36, #E36414);
+    background-image: -o-linear-gradient(top, #FE7A36, #E36414);
+    background-image: linear-gradient(to bottom, #FE7A36, #E36414);
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    border-radius: 20px;
+    text-shadow: 1px 1px 3px #666666;
+    -webkit-box-shadow: 0px 1px 3px #ffffff;
+    -moz-box-shadow: 0px 1px 3px #ffffff;
+    box-shadow: 0px 1px 3px #ffffff;
+    font-family: Courier New;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #E04D01;
+    background-image: -webkit-linear-gradient(top, #E04D01, #343131);
+    background-image: -moz-linear-gradient(top, #E04D01, #343131);
+    background-image: -ms-linear-gradient(top, #E04D01, #343131);
+    background-image: -o-linear-gradient(top, #E04D01, #343131);
+    background-image: linear-gradient(to bottom, #E04D01, #343131);
+    text-decoration: none;
+}
+
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 0;
+    background-color: #0f0e0e;
+}
+#nav-options{
+    display: flex;
+}
+#container{
+    margin-top: 1rem;
+}
+#header{
+    position: relative;
+}
+#about-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+@media (max-width:1100px){
+    .intro-desc{
+        width: 50%;
+    }
+    .skill-row{
+        width: 55%;
+    }
+}
+@media (max-width:1000px){
+    .cloud{
+        height: 7rem;
+        width: 14rem;
+    }
+    .right-cloud{
+        bottom: 25rem;
+        right: 1rem;
+    }
+    .left-cloud{
+        top: 25rem;
+        left: 2rem;
+    }
+    .projects-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skill-row{
+        width: 60%;
+    }
+}
+@media (max-width:950px){
+    .cloud{
+        height: 6rem;
+        width: 12rem;
+    }
+    .right-cloud{
+        bottom: 25rem;
+        right: 1rem;
+    }
+    .left-cloud{
+        top: 8rem;
+        left: 2rem;
+    }
+    .intro-desc{
+        width: 60%;
+    }
+    .skill-row{
+        width: 70%;
+    }
+}
+@media (max-width:800px){
+    .name{
+        font-size: 4rem;
+    }
+    .desc{
+        font-size: 2rem;
+    }
+    .cloud{
+        height: 5rem;
+        width: 10rem;
+    }
+    .right-cloud{
+        bottom: 29rem;
+        right: 1rem;
+    }
+    .intro-desc{
+        width: 80%;
+    }
+    .skill-row{
+        width: 80%;
+    }
+}
+@media (max-width:700px){
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+    .skill-row{
+        width: 90%;
+    }
+}
+@media(max-width:610px) {
+    .volcano {
+        width: 34rem;
+        height: 30rem;
+    }
+    .lava-flow {
+        display: none;
+    }
+    .intro-desc{
+        width: 90%;
+    }
+}
+@media (max-width:595px){
+    .cloud{
+        height: 4rem;
+        width: 8rem;
+    }
+}
+@media (max-width:555px){
+    .left-cloud{
+        top: 17rem;
+        left: 2rem;
+    }
+    .skill-row{
+        width: 95%;
+    }
+}
+@media (max-width:545px){
+    .volcano{
+        width: 26rem;
+        height: 25rem;
+    }
+    .intro-desc{
+        width: 95%;
+    }
+}
+@media (max-width:500px){
+    .cloud{
+        height: 3rem;
+        width: 6rem;
+    }
+    .right-cloud{
+        bottom: 25rem;
+        right: 1rem;
+    }
+    .left-cloud{
+        top: 16rem;
+        left: 1rem;
+    }
+}
+@media (max-width:425px){
+    .volcano{
+        width: 22rem;
+        height: 20rem;
+    }
+    .name{
+        font-size: 3.5rem;
+    }
+    .desc{
+        font-size: 1.75rem;
+    }
+    .left-cloud{
+        top: 14rem;
+        left: 0.5rem;
+    }
+    .right-cloud{
+        bottom: 20rem;
+        right: 0.5rem;
+    }
+    .skill-row{
+        flex-direction: column;
+    }
+    .skill-row2{
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width:370px){
+    .volcano{
+        width: 20rem;
+        height: 18rem;
+    }
+    .name{
+        font-size: 3.5rem;
+    }
+    .desc{
+        font-size: 1.75rem;
+    }
+    #nav{
+        flex-direction: column;
+    }
+    .cloud{
+        height: 2rem;
+        width: 4rem;
+    }
+    .left-cloud{
+        left: 0.25rem;
+        top: 13rem;
+    }
+    .right-cloud{
+        bottom: 15rem;
+        right: 0.25rem;
+    }
+}
+@media (max-width:320px){
+    .name{
+        font-size: 3rem;
+    }
+    .desc{
+        font-size: 1.5rem;
+    }
+    .volcano{
+        width: 18rem;
+        height: 16.2rem;
+    }
+}
