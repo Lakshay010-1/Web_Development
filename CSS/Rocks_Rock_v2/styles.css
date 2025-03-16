@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gentium+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    background-color: #EBF4F6;
+    margin: 0;
+    color: #3C3D37;
+    font-family: "Gentium Plus";
+    min-width: 360px;
+}
+hr {
+    border: 0;
+    border-top: 0.5px solid #c5c3c3;
+    margin: 2rem;
+}
+
+header {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+sup {
+    font-size: 0.4em;
+}
+nav {
+    display: flex;
+    gap: 1rem;
+}
+nav a {
+    font-size: 1.17rem;
+    font-weight: bold;
+}
+a:link {
+    text-decoration: none;
+    color: #5fae52;
+}
+a:hover {
+    text-decoration: underline;
+    color: #347928;
+}
+a:visited {
+    color: #914F1E;
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: none;
+}
+textarea {
+    resize: vertical;
+    height: 70%;
+    width: 70%;
+    border-radius: 0.5rem;
+    border: 1.6px solid black;
+}
+input {
+    height: 50%;
+    width: 70%;
+    border-radius: 0.5rem;
+}
+footer div {
+    background-color: black;
+    padding: 1%;
+    margin: 0;
+}
+
+footer div p {
+    text-align: center;
+}
+
+
+
+::selection{
+    background-color: #B7B7B7;
+    color: #181C14;
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+}
+.heading {
+    text-align: center;
+    font-family: "Barlow Semi Condensed";
+    color: #37AFE1;
+    margin: 1rem auto;
+}
+.heading-2{
+    color:#A66E38;
+}
+.heading-3{
+    color:#B2A59B;
+}
+
+.rock-slogan {
+    color: #9336B4;
+}
+
+.menu-button {
+    height: 2rem;
+}
+
+.header #menu-options {
+    display: none;
+}
+
+.header .menu-container:hover #menu-options {
+    display: block;
+    position: absolute;
+    background: rgb(0, 0, 0);
+    min-width: 200px;
+    padding: 1.5rem;
+    z-index: 1;
+    line-height: 2;
+    font-size: larger;
+}
+.header #menu-options a {
+    display: block;
+}
+.hero-desc{
+    align-self: center;
+}
+.tip-beg{
+    text-align: center;
+    color: #EB5B00;
+}
+.gallery-images img{
+    height: 200px;
+}
+.gallery-images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.margin-bottom-zero{
+    margin-bottom: 0;
+}
+.tools-section > li{
+    margin: 2rem 0;
+
+}
+
+
+
+#types-section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+}
+#container {
+    padding: 2rem 5rem;
+    /* padding-bottom: 0; */
+    margin-top: 6.72rem;
+    display: inline-block;
+}
+#hero {
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: row-reverse;
+}
+#hero h3 {
+    margin: 5px auto;
+}
+#rr-logo {
+    height: 1.55rem;
+}
+#types{
+    display:flex;
+    flex-direction: column;
+}
+#types ol{
+    margin:0;
+}
+#hero-img{
+    border-radius: 1rem;
+    display: inline-block;
+    height: 50%;
+}
+#info {
+    display: grid;
+    grid-template-columns: 1.25fr 0.5fr 1.25fr;
+}
+#contact-info {
+    display: grid;
+    grid-template-columns: 1.25fr 0.5fr 1.25fr;
+    gap: 1rem;
+}
+#info p{
+    padding-right: 1rem ;
+    font-weight:600;
+}
+#submit-button {
+    grid-column: 3/4;
+    background-image: linear-gradient(#4e8ceb,#a7d1db,#5fae52);
+    width: 70%;
+    height: 2.5rem; 
+    text-align: center;
+    border-radius: 2rem;
+    font-weight: 500;
+    font-size: larger;
+}
+#submit-button:hover{
+    background-image: linear-gradient(#5fae52,#a7d1db,#5fae52);
+    color: black;
+}
+#about-section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+.question  h3{
+    margin: 0;
+}
+.question  h4{
+    padding: 0 2rem;
+}
+
+
+
+@media(max-width:1200px){
+    #hero-img{
+        height: 22rem;
+    }
+}
+@media(max-width:1100px){
+    #hero-img{
+        height: 18.5rem;
+    }
+}
+@media (max-width:1000px){
+    #hero{
+        flex-direction: column;
+        align-items: center;
+    }
+    #hero-img{
+        height: 22rem;
+    }
+}
+@media (max-width:800px){
+    #container{
+        padding: 2rem 2rem;
+        padding-bottom: 0;
+    }
+}
+@media (max-width:700px){
+    #container{
+        padding: 2rem 0;
+    }
+    #types-section{
+        padding: 0;
+    }
+    #container h3{
+        padding: 1rem 1rem;
+    }
+    #rocks h4,#minerals h4{
+        padding: 0 1rem;
+    }
+}
+@media (max-width:630px) {
+    nav {
+        display: none;
+    }
+
+    .header {
+        flex-direction: row;
+    }
+
+    #container {
+        margin-top: 4.4rem;
+    }
+
+    #hero {
+        flex-direction: column;
+    }
+
+    #hero-img {
+        height: 15rem;
+    }
+}
+
+@media (max-width:500px) {
+    #hero-img{
+        height: 12.5rem;
+    }
+}
+
+@media (min-width:601px) {
+    .menu-container {
+        display: none;
+    }
+}
