@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/rock-1.ico">
+    <title>Rocks Rock</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="home-page"></div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-secondary-subtle border-bottom border-body p-3" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home-page">
+                <img src="images/logo.png" alt="Logo" class="d-inline-block align-text-top" id="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-success" aria-current="page" href="#home-page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-success" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu bg-secondary-subtle">
+                            <li><a class="dropdown-item text-success" href="#services">Guide</a></li>
+                            <li><a class="dropdown-item text-success" href="#services">Events</a></li>
+                            <li><a class="dropdown-item text-success" href="#services">Club Activities</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-success" href="#services">Petrology</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Rock" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="body-container">
+
+        <!-- Carousel -->
+        <div class="container px-4 py-5 carousel">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="images/rock-hero.jpeg" class="d-block mx-lg-auto img-fluid hero-img"
+                        alt="Man building rock tower" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-info lh-1 mb-3">Rock collecting isn’t just a hobby,it’s an
+                        adventure</h1>
+                    <br>
+                    <p class="lead text-dark">The Fascinating World of Rock Collecting, from shimmering crystals to
+                        rugged fossils, every piece tells a story about the Earth’s history and your journey as a
+                        collector. Each specimen you collect is like holding a piece of Earth’s incredible history in
+                        the palm of your hand.
+                        <br><br>
+                        So, grab your tools, dust off your display shelf, and let’s uncover the treasures of the natural
+                        world together.
+                    </p>
+                    <div class="py-3 text-shadow-1">
+                        <h3 class="fw-bold text-center text-primary"> Let's Rock this!</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="pt-5 pb-4" id="about">
+            <div class="text-center">
+                <div class="container py-3">
+                    <h1 class="pb-2 border-bottom text-success">About</h1>
+                    <p class="col-lg-10 mx-auto lead fs-4 fw-medium py-4">
+                        Welcome to "<ins>Rocks Rock</ins>" , a community dedicated to celebrating the art, science, and
+                        adventure of rock collecting!
+                        <br><br>
+                        Founded by enthusiasts who share a love for Earth's natural treasures, our organization brings
+                        together rock
+                        collectors, geologists, hobbyists, and nature lovers from around the globe.
+                        Our mission is to inspire, educate, and connect everyone who shares an appreciation for rocks,
+                        minerals, and fossils.
+                        <br> <br>
+                        We provide educational resources such as guides,tutorials, and expert articles to learn more
+                        about
+                        rocks,minerals, and fossils.Organize Events and workshops , Rock shows, field trips and hand-on
+                        workshops,Join Forum, meet other collectors, and share your passion and discover your unique
+                        specimens,tools, and collecting accessories.
+                        <br> <br>
+                        At "<ins>Rocks Rock</ins>", we believe rock collecting is more than a hobby—it’s a way to
+                        connect
+                        with nature,
+                        spark curiosity, and build lifelong friendships. Together, we explore the wonders of our planet,
+                        one rock at a time.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div id="services" class="py-5">
+            <div class="container ">
+                <h1 class="pb-2 border-bottom text-center text-success">Services</h1>
+                <div class="row g-4 pt-5 pb-4 row-cols-1 row-cols-lg-3 text-center">
+                    <div class="feature col">
+                        <div
+                            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-warning bg-gradient fs-2 mb-3">
+                            <img src="images/journal-text.svg" alt="notebook" height="30">
+                        </div>
+                        <h3 class="fs-2 text-primary">Petrology</h3>
+                        <p class="text-dark">Our services cater to collectors, educators, and enthusiasts looking to
+                            deepen their petrology understanding</p>
+                    </div>
+                    <div class="feature col">
+                        <div
+                            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-warning bg-gradient fs-2 mb-3">
+                            <img src="images/chat-square-heart.svg" alt="Community" height="30">
+                        </div>
+                        <h3 class="fs-2 text-primary">Community</h3>
+                        <p class="text-dark">Collecting is more fun when shared! We believe in building a strong
+                            community where rock
+                            lovers can connect, trade, and learn from each other. </p>
+                    </div>
+                    <div class="feature col">
+                        <div
+                            class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-warning bg-gradient fs-2 mb-3">
+                            <img src="images/wallet.svg" alt="wallet" height="30">
+                        </div>
+                        <h3 class="fs-2 text-primary">Economical</h3>
+                        <p class="text-dark">We make rock collecting accessible and budget-friendly while promoting
+                            ethical sourcing
+                            and sustainability.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Testimonials -->
+        <div id="testimonials" class="py-5">
+            <div class="container py-1">
+                <h1 class="pb-2 border-bottom text-center text-success">Testimonials</h1>
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden bg-primary-subtle rounded-4 shadow-lg"
+                            style="background-image: url('images/people-1.svg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1 justify-content-between">
+                                <h3 class="text-warning pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">A Fun and Educational
+                                    Experience</h3>
+                                <p class="text-dark">The guest speakers, hands-on workshops, and rock identification
+                                    sessions have really
+                                    helped me improve my collection.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden bg-primary-subtle rounded-4 shadow-lg"
+                            style="background-image: url('images/people-2.svg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1 justify-content-between">
+                                <h3 class="text-warning pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Field Trips Are the Best
+                                    Part
+                                </h3>
+                                <p class="text-dark">The field trips take us to some amazing places, and I’ve found some
+                                    really
+                                    unique rocks and fossils along the way.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden bg-primary-subtle rounded-4 shadow-lg"
+                            style="background-image: url('images/people-3.svg');">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1 justify-content-between">
+                                <h3 class="text-warning pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">A Club That Feels Like
+                                    Family
+                                </h3>
+                                <p class="text-dark">Everyone is so friendly and supportive, and it’s awesome to be
+                                    around
+                                    people who share
+                                    the same passion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing  -->
+        <div class="pt-5 pb-3" id="price">
+            <div class="container pricing-header py-3 pb-md-4 mx-auto text-center">
+                <h1 class="pb-2 border-bottom text-center text-success">Pricing</h1>
+                <p class="fs-5 text-body-secondary py-2">No Hidden Fees! The membership covers everything <br>Any
+                    additional costs will always be clearly communicated upfront.</p>
+                <div class="row row-cols-1 row-cols-lg-3 mb-3 text-center d-flex justify-content-center">
+                    <div class="col" data-bs-theme="dark">
+                        <div class="card mb-4 rounded-3 shadow-sm bg-secondary-subtle">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Free</h4>
+                            </div>
+                            <div class="card-body">
+                                <h1 class="card-title pricing-card-title text-info">₹0<small
+                                        class="text-body-secondary fw-light">/mo</small>
+                                </h1>
+                                <h4>Inclusive of Tax</h4>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    <li>Access to Club Resources & Private Collections</li>
+                                    <li>Exclusive Member-Only Auctions & Deals</li>
+                                    <li>Networking & Community</li>
+                                    <li>Petrology & Guidance</li>
+                                    <li>Events & Activities</li>
+                                </ul>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-warning">Join</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div id="faqs" class="py-4">
+            <div class="container my-5">
+                <h1 class="pb-2 mb-4 border-bottom text-center text-success">Frequently Asked Questions</h1>
+                <div id="questions" data-bs-theme="dark">
+                    <div class="p-5 rounded-3 bg-dark-subtle text-white">
+                        <h1 class="text-info text-center py-2">What is Rock Collection?</h1>
+                        <p class="lead">
+                            Rock collecting, also known as rockhounding, is the fascinating hobby of searching for and
+                            gathering rocks, minerals, and gemstones from nature.
+                            <br>
+                            It’s a mix of science, exploration, and art—combining a love of the natural world with the
+                            curiosity to uncover its hidden treasures.At its core, rock collecting is about appreciating
+                            the
+                            unique beauty and history of each specimen. From polished gemstones to rugged geodes, every
+                            rock
+                            tells a story about Earth’s processes over millions or even billions of years.
+                        </p>
+                    </div>
+                    <hr class="question-separate">
+                    <div class="p-5 rounded-3 bg-dark-subtle text-white">
+                        <h1 class="text-info text-center py-2">What Do Rock Collectors Look For?</h1>
+                        <p class="lead">
+                            Rock collectors seek a variety of natural materials, including:
+                        <ul>
+                            <li>Rocks: Common types like granite, sandstone, or slate, as well as rare formations
+                                like
+                                volcanic rocks.
+                            </li>
+                            <li>Minerals: Crystalline structures such as quartz, pyrite, and fluorite.
+                            </li>
+                            <li>Fossils: Imprints or remains of ancient plants and animals preserved in stone.
+                            </li>
+                            <li>Gemstones: Precious or semi-precious stones like amethyst, agate, or turquoise.
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                    <hr class="question-separate">
+                    <div class="p-5 rounded-3 bg-dark-subtle text-white">
+                        <h1 class="text-info text-center py-2">Why is Rock Collecting Important?</h1>
+                        <p class="lead">
+                            Rock collecting isn’t just about finding pretty stones—it’s also a way to learn about
+                            geology,
+                            geography, and the history of our planet. Each specimen reveals clues about how Earth’s
+                            landscapes formed, evolved, and continue to change.
+                            <br>
+                            Additionally, rock collecting contributes to a greater appreciation for nature and its
+                            incredible diversity, fostering conservation efforts and environmental awareness.
+                        </p>
+                    </div>
+                    <hr class="question-separate">
+                    <div class="p-5 rounded-3 bg-dark-subtle text-white">
+                        <h1 class="text-info text-center py-2">Who Can Be a Rock Collector?</h1>
+                        <p class="lead">
+                            Anyone! Rock collecting is a hobby for all ages and skill levels. Whether you're a scientist
+                            studying mineral composition, a hobbyist searching for stunning specimens, or a child
+                            fascinated
+                            by shiny pebbles, there’s a place for you in the world of rock collecting.
+                            <br>
+                            With just a sense of curiosity and a bit of patience, you can start your own collection and
+                            enjoy the adventure of discovering the wonders of the natural world.
+                        </p>
+                    </div>
+                    <hr class="question-separate">
+                    <div class="p-5 rounded-3 bg-dark-subtle text-white">
+                        <h1 class="text-info text-center py-2">Why Choose Rock Collecting as a Hobby?</h1>
+                        <p class="lead">
+                            Rock collecting is more than just picking up stones—it’s an adventure, a learning journey,
+                            and a
+                            way to connect with nature. Here’s why it’s such a fantastic hobby:
+                        <ul>
+                            <li><ins>Adventure and Discovery</ins>:
+                                <br>
+                                Exploring parks, riversides, mountains, or beaches in search of unique specimens
+                                transforms every outing into an exciting treasure hunt. You never know what gem
+                                (literally!) you might stumble upon—a sparkling quartz, a fossilized sea creature,
+                                or
+                                even a meteorite.
+                            </li>
+                            <br>
+                            <li><ins>Meteorites in Your Pocket</ins>:
+                                <br>
+                                Some collectors have found meteorites while hunting for rocks—literally pieces of
+                                outer
+                                space right here on Earth!
+                            </li>
+                            <br>
+                            <li><ins>Diamonds in Disguise</ins>:
+                                <br>
+                                Certain unassuming rocks can contain hidden treasures, like raw diamonds or opals,
+                                waiting to be uncovered.
+                            </li>
+                            <br>
+                            <li><ins>A World of Color</ins>:
+                                <br>
+                                Minerals like malachite, amethyst, and labradorite create a dazzling palette of
+                                colors,
+                                each caused by unique chemical properties.
+
+                            </li>
+                            <br>
+                            <li><ins>A Treasure Hunt for All Ages</ins>:
+                                <br>
+                                From kids marveling at shiny pebbles to geologists uncovering ancient fossils, rock
+                                collecting is an activity that spans generations.
+
+                            </li>
+                            <br>
+                            <li><ins>A Growing Collection of Stories</ins>:
+                                <br>
+                                Every rock in your collection has its own origin—a volcanic eruption, a slow
+                                sediment
+                                buildup, or even the movement of glaciers—and collecting them lets you piece
+                                together
+                                Earth's geological puzzle.
+                            </li>
+                            <br>
+                            <li><ins>It’s Endlessly Fascinating</ins>:
+                                <br>
+                                From learning to identify specimens to discovering their geological origins, there’s
+                                always something new to explore. No two rocks are exactly alike, and your collection
+                                will always keep surprising you.
+                            </li>
+                            <br>
+                            <li><ins>Connect with a Community</ins>:
+                                <br>
+                                Rock collecting is a globally shared passion. You can join clubs, attend gem and
+                                mineral
+                                shows, trade finds, or simply share your discoveries online with fellow enthusiasts.
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery -->
+        <div id="myCarousel" class="container-fluid carousel slide pb-5" data-bs-ride="carousel">
+            <h1 class="py-2 border-bottom text-center text-success">Rock Collection Gallery</h1>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active bg-dark"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                    class="bg-dark" aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                    class="bg-dark"></button>
+            </div>
+            <div class="carousel-inner pt-3">
+                <div class="carousel-item active">
+                    <img src="images/rock-collect_01.jpg" class="bd-placeholder-img d-block mx-auto" aria-hidden="true"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" alt="rock-collect_01">
+                </div>
+                <div class="carousel-item">
+
+                    <img src="images/rock-collect_02.jpg" class="bd-placeholder-img d-block mx-auto" aria-hidden="true"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" alt="rock-collect_02">
+                </div>
+                <div class="carousel-item ">
+                    <img src="images/rock-collect_03.jpg" class="bd-placeholder-img d-block mx-auto" aria-hidden="true"
+                        preserveAspectRatio="xMidYMid slice" focusable="false" alt="rock-collect_03">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="pt-3 bg-secondary-subtle border-bottom border-body" data-bs-theme="dark">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#home-page" class="nav-link px-2 text-success">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link px-2 text-success">About</a></li>
+            <li class="nav-item"><a href="#price" class="nav-link px-2 text-success">Pricing</a></li>
+            <li class="nav-item"><a href="#faqs" class="nav-link px-2 text-success">FAQs</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-success">Contact</a></li>
+        </ul>
+        <p class="text-center text-success">&copy;2025 Rocks Rock Company</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
