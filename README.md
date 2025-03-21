@@ -9,7 +9,7 @@
         </ul>
     </li>
     <br/>
-    <li><h2>CSS (SASS,Grid,Flexbox included) </h2>
+    <li><h2>CSS </h2>
         <ul>
             <h3>
                 <li>Resume v2</li>
@@ -19,7 +19,7 @@
         </ul>
     </li>
     <br/>
-    <li><h2>Tailwind CSS (Utility Framework) </h2>
+    <li><h2>Tailwind CSS </h2>
         <ul>
             <h3>
                 <li>Resume v3</li>
@@ -27,7 +27,7 @@
         </ul>
     </li>
     <br/>
-    <li><h2>Bootstrap (Component Framework) </h2>
+    <li><h2>Bootstrap </h2>
         <ul>
             <h3>
                 <li>Rocks Rock v3</li>
