@@ -30,10 +30,12 @@ body {
 
 #testimonials .card:hover p {
     text-shadow: 0 0 20px #A1E3F9;
+    transition: text-shadow 500ms;
 }
 
 #testimonials .card:hover h3 {
-    text-shadow: 0 0 30px #5CB338;
+    text-shadow: 0 0 10px #1D1616;
+    transition: text-shadow 1s;
 }
 
 
