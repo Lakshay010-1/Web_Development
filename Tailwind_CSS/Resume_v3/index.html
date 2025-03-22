@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="icon" href="images/profile.ico">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-black w-full selection:bg-lime-300 selection:text-amber-900 md:p-10">
+
+    <div class="bg-sky-50 w-full h-full flex flex-col md:flex-row mx-auto min-w-[19rem] max-w-[70rem] rounded-md">
+
+        <div class="bg-blue-950 flex flex-col p-5 md:w-full lg:w-[80%] xl:w-[70%]">
+            <div id="intro" class="flex flex-col justify-center items-center p-5 pb-0">
+                <img src="images/profile-pic.png"
+                    class="h-[200px] sm:h-[250px] md:h-[200px] md:w-[160px] rounded-md mt-3 mb-5" alt="profile pic">
+                <h1 class="text-3xl text-green-500 mb-2">Lakshay Goyal</h1>
+                <h2 class="text-lg text-green-500">Software Developer</h2>
+            </div>
+            <div id="about-me" class="text-center p-5">
+                <h2 class="text-xl my-3 text-purple-600 ">About Me</h2>
+                <p class="text-lg text-sky-200">Software developer with experience in Python, Java, and MERN Stack, and
+                    a focus on building efficient applications. Background in full-stack development and database
+                    management.
+                    Brings a collaborative approach to problem-solving and a commitment to writing clean, maintainable
+                    code.
+                </p>
+            </div>
+            <div id="contact" class="p-5">
+                <h2 class="text-center text-xl my-3 text-purple-600">Contact</h2>
+                <div id="contact-info" class="grid grid-cols-12 gap-3 mx-auto">
+                    <h3
+                        class="inline text-lg col-span-3 justify-self-end text-fuchsia-700 md:col-span-12 md:justify-self-start">
+                        Email:</h3>
+                    <a href="mailto:lakshaybyte@gmail.com"
+                        class="inline col-span-9 text-gray-400 text-base hover:text-orange-500 hover:underline">lakshaybyte@gmail.com</a>
+                    <h3
+                        class="inline align-top text-lg col-span-3 justify-self-end text-fuchsia-700 md:col-span-12 md:justify-self-start">
+                        Social:</h3>
+                    <div class="flex flex-col gap-2 col-span-9">
+                        <a href="https://www.linkedin.com/in/goyal-lakshay/"
+                            class="inline text-gray-400 text-base hover:text-orange-500 hover:underline"><img
+                                src="images/linkedin.svg" alt="Linkedin" class="inline h-[20px] align-top mr-1">
+                            Linkedin</a>
+                        <a href="https://github.com/Lakshay010-1"
+                            class="inline text-gray-400 text-base hover:text-orange-500 hover:underline"><img
+                                src="images/github.svg" alt="Github" class="inline h-[20px] align-top mr-1"> Github</a>
+                        <a href="https://leetcode.com/u/luckshay010-1/"
+                            class="inline text-gray-400 text-base hover:text-orange-500 hover:underline"><img
+                                src="images/leetcode.svg" alt="Leetcode" class="inline h-[20px] align-top mr-1">
+                            Leetcode</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-5">
+            <div id="skills" class="p-3">
+                <h2 class="text-center text-xl my-3 text-purple-600 ">Skills</h2>
+                <ul class="list-disc text-base text-blue-950">
+                    <li><a href="https://github.com/Lakshay010-1/Web_Development"
+                            class="text-blue-600 hover:text-red-500 hover:underline">Web
+                            Development</a></li>
+                    <li>
+                        <a href="https://github.com/Lakshay010-1/Java"
+                            class="text-blue-600 hover:text-red-500 hover:underline">Java</a>,
+                        <a href="https://github.com/Lakshay010-1/Python"
+                            class="text-blue-600 hover:text-red-500 hover:underline">Python</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Lakshay010-1/C"
+                            class="text-blue-600 hover:text-red-500 hover:underline">C</a>,
+                        <a href="https://github.com/Lakshay010-1/Cpp"
+                            class="text-blue-600 hover:text-red-500 hover:underline">C++</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="projects" class="p-3">
+                <h2 class="text-center text-xl my-3 text-purple-600">Projects</h2>
+                <div class="grid grid-cols-12 gap-2 text-blue-950">
+                    <!-- Project-1 -->
+                    <h3 class="col-span-12 text-yellow-700"><a
+                            href="https://github.com/Lakshay010-1/Java/tree/main/Spring/MicroServices/App_MicroServices"
+                            class="text-blue-600 hover:text-red-500 hover:underline">Quiz Application </a> (Backend)
+                    </h3>
+                    <p class="col-span-12 mb-3">
+                        The Quiz App Backend project is a microservices-based application developed using the Java
+                        Spring Framework.
+                        <br>
+                        It is designed to support a scalable, secure, and efficient platform for creating, managing, and
+                        taking quizzes.
+                        The backend handles core functionalities such as quiz creation, question management, score
+                        tracking,and result analysis.
+                    </p>
+                    <!-- Project-2 -->
+                    <h3 class="col-span-12 text-yellow-700"><a href="https://lakshaygoyal-lg.github.io/capstone-v1/"
+                            class="text-blue-600 hover:text-red-500 hover:underline">Portfolio</a> (v1)
+                    </h3>
+                    <p class="col-span-12 mb-3">
+                        The Responsive Portfolio Website is built using HTML and CSS to showcase a
+                        personal portfolio(v1).
+                        <br>
+                        This project serves as a digital resume and demonstrates fundamental web development
+                        skills, focusing on responsive design, accessibility, and user experience.
+                        <br>
+                        This also Highlights past projects
+                    </p>
+                </div>
+            </div>
+
+            <div id="edu-qua" class="p-3">
+                <h2 class="text-center text-xl my-3 text-purple-600">Educational Qualification</h2>
+                <div class="grid grid-cols-12 gap-2 text-blue-950">
+
+                    <h3 class="col-span-6 text-lime-600">Qualification</h3>
+                    <h3 class="col-span-3 text-lime-600">Board</h3>
+                    <h3 class="col-span-3 text-lime-600">Year</h3>
+
+                    <p class="col-span-6">Bachelor of Computer Applications</p>
+                    <p class="col-span-3">CCSU</p>
+                    <p class="col-span-3">2026</p>
+
+                    <p class="col-span-6">Senior-Secondary School</p>
+                    <p class="col-span-3">CBSE</p>
+                    <p class="col-span-3">2023</p>
+
+                </div>
+            </div>
+
+            <div id="hobbies" class="p-3">
+                <h2 class="text-center text-xl my-3 text-purple-600">Hobbies</h2>
+                <ul class="list-disc text-blue-950">
+                    <li><a href="https://monkeytype.com/profile/Lakshay010-1"
+                            class="text-blue-600 hover:text-red-500 hover:underline">Touch Typing</a></li>
+                    <li>Volleyball</li>
+                    <li>Football</li>
+                </ul>
+            </div>
+            <h3 class="text-center mt-5 ">&copy;Lakshay Goyal</h3>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
