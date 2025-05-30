@@ -35,4 +35,21 @@
         </ul>
     </li>
     <br/>
+    <li><h2>JavaScript</h2>
+        <ul>
+            <h3>
+                <li>Rock-Paper-Scissors v1</li>
+                <li>Voyager v1</li>
+            </h3>
+        </ul>
+    </li>
+    <br/>
+    <li><h2>jQuery</h2>
+        <ul>
+            <h3>
+                <li>Tic-Tac-Toe v1</li>
+            </h3>
+        </ul>
+    </li>
+    <br/>
 </ul>
