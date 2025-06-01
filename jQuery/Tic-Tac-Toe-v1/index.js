@@ -25,7 +25,6 @@ $("#choose-sign button").click(
         $("[t-cell]").off("click").on("click", function () {
             if (!userCanMove || !gameActive) {
                 $("#decision-container").show();
-                console.log(1);
                 return;
             }
             var userCellPlayed = parseInt($(this).attr("t-cell"));
@@ -46,7 +45,6 @@ $("#choose-sign button").click(
                 $("#turn").text(winner + " Win");
                 let statusAudio1=new Audio("sounds/"+((isWinner==userSign)?"victory":"lose")+".mp3");
                 statusAudio1.play();
-                console.log(2);
                 return;
             }
 
@@ -54,7 +52,6 @@ $("#choose-sign button").click(
                 gameActive = false;
                 $("#turn").text("Game Over");
                 $("#decision-container").show();
-                console.log(3);
                 return;
             }
 
@@ -68,7 +65,6 @@ $("#choose-sign button").click(
                         gameActive = false;
                         $("#turn").text("Game Over");
                         $("#decision-container").show();
-                        console.log(4);
                         return;
                     }
                     var computerCellPlayed = availableMoves[Math.floor(Math.random() * availableMoves.length)];
@@ -85,7 +81,6 @@ $("#choose-sign button").click(
                         $("#decision-container").show();
                         let statusAudio2=new Audio("sounds/"+((isWinner==userSign)?"victory":"lose")+".mp3");
                         statusAudio2.play();
-                        console.log(5);
                         return;
                     }
                     cells--;
@@ -93,7 +88,6 @@ $("#choose-sign button").click(
                         gameActive = false;
                         $("#turn").text("Game Over");
                         $("#decision-container").show();
-                        console.log(6);
                         return;
                     }
                     $("#turn").text("Your Turn");
