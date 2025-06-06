@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do</title>
+  <link rel="icon" href="images/togo-icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="header">
+      <div id="title-container">
+        <h1>To-Do</h1>
+      </div>
+      <div id="header-bg">
+        <h2>DashBoard</h2>
+        <h2>
+          <ul>
+            <li><a href="#">My_ToDo_01</a></li>
+            <li><a href="#">My_ToDo_02</a></li>
+            <li><a href="#">MyWork_ToDo</a></li>
+            <li><a href="#">MyMonthly_ToDo</a></li>
+            <li><a href="#">MyYearly_ToDo</a></li>
+          </ul>
+        </h2>
+      </div>
+    </div>
+    <div id="content">
+      <div id="content-header">
+        <div id="content-path">
+          <div>
+            <img src="images/task-square.png" class="dashboard-img" alt="to-do-square">
+          </div>
+          <div>
+            <img src="images/arrow-next.png" class="dashboard-img" alt="arrow-next">
+            <h2>Dashboard</h2>
+          </div>
+          <div>
+            <img src="images/arrow-next.png" class="dashboard-img" alt="arrow-next">
+            <h2>My_ToDo_02</h2>
+          </div>
+          <div>
+            <img src="images/arrow-next.png" class="dashboard-img" alt="arrow-next">
+            <h2>Overview</h2>
+          </div>
+        </div>
+        <img src="images/human.svg" class="profile-img" alt="human profile">
+      </div>
+      <hr>
+      <div id="currentDirectory">
+        <h1>My_ToDo_02</h1>
+        <div id="progress-bar">
+          <div id="start-progress"></div>
+          <div id="ongoing-progress"></div>
+          <div id="completed-progress"></div>
+        </div>
+      </div>
+      <div id="task-form">
+        <input id="add-task-text" type="text" placeholder="Add Task">
+        <button id="add-task-btn" class="btn-unpressed">+</button>
+      </div>
+
+      <div id="tasks">
+        <div id="start-tasks" class="tasks-item">
+          <div>
+            <h2 class="task-status blue-status">To Start
+              <span class="tool-tip-text"></span>
+            </h2>
+          </div>
+          <div class="tasks-container start-con"></div>
+        </div>
+        <div id="ongoing-tasks" class="tasks-item">
+          <div>
+            <h2 class="task-status yellow-status">Ongoing
+              <span class="tool-tip-text"></span>
+            </h2>
+          </div>
+          <div class="tasks-container ongoing-con"></div>
+        </div>
+        <div id="completed-tasks" class="tasks-item">
+          <div>
+            <h2 class="task-status green-status">Completed
+              <span class="tool-tip-text"></span>
+            </h2>
+          </div>
+          <div class="tasks-container completed-con"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
