@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            color: whitesmoke;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        #container {
+            text-align: center;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #features{
+            width: 80%;
+        }
+        li{
+            margin:1rem 0;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>Features : </h1>
+        <div id="features">            
+            <ul>
+                <li>
+                    Static File Serving: Uses fs and path modules to serve static assets (HTML, CSS, JS, images) from a public
+                    directory, mimicking NGINX’s file server behavior.
+                </li>
+                <li>
+                    Basic Reverse Proxy Logic: Handles HTTP request routing and can forward certain routes to internal handlers
+                    or services, showcasing how request proxying can be achieved.
+                </li>
+                <li>
+                    MIME Type Handling: Dynamically resolves MIME types to serve correct headers for various file types.
+                </li>
+                <li>
+                    Customizable Routing: Routes are manually defined to demonstrate how requests can be conditionally processed
+                    or redirected, similar to NGINX configuration blocks.
+                </li>
+                <li>
+                    Lightweight & Dependency-Free: Pure Node.js approach, ideal for learning how web servers work under the
+                    hood.
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
