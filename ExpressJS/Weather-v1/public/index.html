@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/weather-umbrella.svg">
+    <title>Weather Today</title>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <nav id="header">
+            <h1>Weather Today</h1>
+        </nav>
+
+        <main>
+            <!-- Input Form -->
+            <div id="input-info">
+                <form id="input-form">
+                    <input type="text" id="city-input" name="city" placeholder="Enter city" required>
+                    <input type="submit" id="submitBtn" value="Get">
+                </form>
+            </div>
+
+            <!-- Error Message -->
+            <section id="error-msg" class="hidden">
+                <h3 id="error">Error 404<br>City not found!</h3>
+            </section>
+
+            <!-- City info -->
+            <section id="city-info" class="hidden">
+                <!-- Info Header -->
+                <div id="info-header">
+                    <div id="coord-sys" class="hidden">
+                        <p class="green-text">Latitude: <span class="blue-text" id="lat"></span></p>
+                        <p class="green-text">Longitude: <span class="blue-text" id="lon"></span></p>
+                    </div>
+                    <div id="city-country">
+                        <img src="" class="country-flag" alt="county">
+                        <h2> <span id="cur-city"></span>, <span id="cur-country"></span></h2>
+                        <img src="" class="country-flag" alt="county">
+                    </div>
+                    <div id="weather-icon" class="hidden">
+                        <img src="" alt="weather-icon" id="weather-img">
+                    </div>
+                </div>
+
+                <!-- Weather Info -->
+                <div id="weather-info">
+                    <div>
+                        <ul>
+                            <li>
+                                <p class="green-text">Weather: <span class="blue-text" id="wea-main"></span>, <span
+                                        class="blue-text" id="wea-desc"></span></p>
+                            </li>
+                            <li>
+                                <div id="temperature">
+                                    <p class="blue2-text">Temperature: <span class="green-text"><span class="blue-text"
+                                                id="temp-main"></span>°C </span></p>
+                                    <ul>
+                                        <li class="green-text">Feels Like: <span class="blue-text" class="blue-text"
+                                                id="temp-feels-like"></span>°C</li>
+                                        <li class="green-text">Min: <span class="blue-text" id="temp-min"></span>°C</li>
+                                        <li class="green-text">Max: <span class="blue-text" id="temp-max"></span>°C</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="green-text">Air Pressure: <span class="blue-text"
+                                        id="city-air-pressure"></span> hPa</p>
+                            </li>
+                            <li>
+                                <p class="green-text">Ground Level: <span class="blue-text" id="city-grndlevel"></span>
+                                    hPa</p>
+                            </li>
+                            <li>
+                                <p class="green-text">Humidity: <span class="blue-text" id="city-humidity"></span>%</p>
+                            </li>
+                            <li>
+                                <p class="green-text">Sea Level: <span class="blue-text" id="city-sealevel"></span> hPa
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <p class="green-text">Clouds: <span class="blue-text" id="city-clouds"></span>%</p>
+                            </li>
+                            <li>
+                                <div id="wind">
+                                    <p class="blue2-text">Wind:</p>
+                                    <ul>
+                                        <li class="green-text">Speed: <span class="blue-text" id="wind-speed"></span>
+                                            m/s</li>
+                                        <li class="green-text">Direction: <span class="blue-text" id="wind-deg"></span>°
+                                        </li>
+                                        <li class="green-text">Gust: <span class="blue-text" id="wind-gust"></span> m/s
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="green-text">Time: <span class="blue-text" id="city-dt"></span> UTC</p>
+                            </li>
+                            <li>
+                                <p class="green-text">Sunset: <span class="blue-text" id="city-sunset"></span> UTC</p>
+                            </li>
+                            <li>
+                                <p class="green-text">Timezone: <span class="blue-text" id="city-timezone"></span> sec
+                                </p>
+                            </li>
+                            <li>
+                                <p class="green-text">Sunrise: <span class="blue-text" id="city-sunrise"></span> UTC</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <footer>
+        <h2>&copy;<span id="cur-year"></span> Lakshay Goyal</h2>
+    </footer>
+
+    <script src="logic.js"></script>
+
+</body>
+
+</html>

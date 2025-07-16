@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Monoton&display=swap');
+
+/* Tags */
+body {
+    background-color: lightblue;
+    background-image: url("images/weather-bg.png");
+    background-size: 50px auto;
+    background-position: center;
+    color: white;
+    margin: 0;
+    font-family: "DM Mono";
+    min-height: 100vh;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input {
+    font-size: larger;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60vh;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+footer {
+    display: block;
+    background-color: black;
+    color: whitesmoke;
+    padding: 2rem 0;
+    width: 100%;
+    text-align: center;
+    align-self: flex-end;
+}
+
+footer>h2 {
+    margin: 0;
+}
+
+footer:hover {
+    color: black;
+    background-color: rgba(201, 237, 255, 0.3);
+}
+
+/* Class */
+.hidden {
+    display: none;
+}
+
+.blue-text {
+    color: #f8e57a;
+}
+
+.blue2-text {
+    color: #9de21d;
+}
+
+.green-text {
+    color: #6ee7ff;
+}
+
+.country-flag {
+    height: 50px;
+}
+
+
+/* Attributes */
+input[type="text"] {
+    width: 65%;
+    border: 0;
+    box-shadow: 2px 2px 20px black;
+}
+
+input[type="submit"] {
+    width: 20%;
+    border: 0;
+    box-shadow: 2px 2px 20px black;
+}
+
+input[type="submit"]:hover {
+    border: 0;
+    box-shadow: 2px 2px 20px grey;
+    background-color: rgb(23, 22, 22);
+    color: whitesmoke;
+}
+
+
+/* Ids */
+#container {
+    padding-top: 1.5rem;
+}
+
+#header {
+    text-align: center;
+    font-family: "Monoton";
+    font-size: 2rem;
+    margin: 1rem;
+    text-shadow: 2px 2px 10px blue, -2px -2px 10px blueviolet, 2px -2px 10px green, -2px 2px 10px slateblue;
+}
+
+#input-form {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+}
+
+#info-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem auto;
+    text-align: center;
+}
+
+#city-info {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 1rem;
+    margin-top: 1.5rem;
+}
+
+#city-info>div {
+    padding: 1rem;
+}
+
+#city-country {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#weather-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#weather-info>div>ul {
+    padding-left: 1rem;
+}
+
+#coord-sys {
+    display: none;
+}
+
+#weather-icon {
+    display: none;
+}
+
+#error-msg {
+    text-align: center;
+    color: whitesmoke;
+}
+
+#error {
+    background-color: red;
+}
+
+/* Media Queries */
+@media(min-width:768px) {
+    #header {
+        font-size: 2.5rem;
+    }
+
+    #weather-info {
+        flex-direction: row;
+    }
+
+    #weather-info>div {
+        width: 50%;
+    }
+
+    #coord-sys {
+        display: block;
+    }
+
+    #weather-icon {
+        display: block;
+    }
+
+    #info-header {
+        justify-content: space-between;
+    }
+
+}
+
+@media(min-width:1024px) {
+    #weather-info {
+        justify-content: flex-end;
+    }
+
+    #weather-info>div {
+        width: 40%;
+    }
+
+}
