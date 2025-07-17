@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Inconsolata:wght@200..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(30, 30, 30);
+    font-family: "Inconsolata";
+    color: whitesmoke;
+    min-width: 12rem;
+    margin: 0;
+    word-break: break-word;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+input {
+    background-color: #e6e8fd;
+    border: 0;
+    font-size: 90%;
+}
+
+input[type="submit"] {
+    background-color: #f4fae0;
+}
+input[type="submit"]:hover {
+    background-color: #ecffad;
+}
+input[type="submit"]:active {
+    background-color: #d0ff37;
+}
+
+select {
+    background-color: #e6e8fd;
+    font-size: 90%;
+    padding: 0.5rem;
+}
+
+header {
+    background-color: black;
+    background-image: url("images/infinity-clock.gif");
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer {
+    color: #ff1100;
+    text-shadow: 0.3rem 0.3rem 0.5rem black, 0.3rem -0.3rem 0.5rem black, -0.3rem 0.3rem 0.5rem black, -0.3rem -0.3rem 0.5rem black;
+    background-color: black;
+    background-image: url("images/time-hourglass.png");
+    background-repeat: repeat;
+    background-size: 2.5rem;
+    background-position: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer>h3,
+header>h1 {
+    margin: 0;
+}
+
+
+
+::selection{
+    background-color: #e1f500;
+    color: rgb(204, 0, 0);
+}
+
+
+
+.header {
+    font-family: "Fira Mono";
+    text-align: center;
+    color: #ff6f00;
+}
+
+.form-img {
+    height: 5rem;
+    transform: rotate(90deg);
+}
+
+.time-since-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.form-data-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flag:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.blue-font {
+    color: #525FE1;
+}
+
+.yellow-font {
+    color: #f7b450;
+}
+
+.green-font {
+    color: #B6F500;
+}
+
+.purple-font {
+    color: #9929EA;
+}
+
+.progress-status {
+    width: 100%;
+}
+
+.progress-status>h2 {
+    margin: 0.5rem 0;
+}
+
+.progress-status>.progress-bar {
+    display: inline-block;
+    width: 75%;
+    height: 1rem;
+    background-color: #525FE1;
+}
+
+.progress-bar>div {
+    height: 100%;
+    background-color: #B6F500;
+    width: 0;
+}
+
+
+
+#container {
+    padding: 0.5rem 1.5rem;
+}
+
+#header {
+    color: #ff1100;
+    text-shadow: 0.3rem 0.3rem 0.5rem black, 0.3rem -0.3rem 0.5rem black, -0.3rem 0.3rem 0.5rem black, -0.3rem -0.3rem 0.5rem black;
+}
+
+#from-to-form {
+    display: flex;
+    gap: 1rem;
+    font-size: larger;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#from-to-form input {
+    height: 2rem;
+    padding: 0.5rem;
+    width: 90%;
+}
+
+#from-to-form input[type="submit"] {
+    height: 3rem;
+    width: 80%;
+    align-self: end;
+}
+
+#time-since-res {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    margin: 1rem 0;
+}
+
+#country-time>form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+#country-time>form>div {
+    width: 100%;
+}
+
+#country-time>form input {
+    height: 2rem;
+    padding: 0.5rem;
+    width: 68%;
+}
+
+#current-info {
+    display: grid;
+    color: #f7b450;
+    grid-auto-flow: row;
+}
+
+#current-info span,
+label {
+    color: #9929EA;
+}
+
+#countries-timezone {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin: 1rem 0;
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#countries-timezone>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+#countries-timezone>div>input,
+#countries-timezone>div>select {
+    border: 0;
+    padding: 0.5rem;
+    height: 2.5rem;
+}
+
+#country-form>label {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#country-form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+#country-form>div>input,
+#country-form>div>select {
+    border: 0;
+    padding: 0.5rem;
+    height: 2.5rem;
+}
+
+#country-form>div>select {
+    height: 3rem;
+    width: 100%;
+}
+
+#country-form>div input {
+    width: 100%;
+    min-width: 67px;
+    padding: 0.5rem;
+    height: 3rem;
+    align-self: flex-end;
+}
+
+#progress-time {
+    display: flex;
+    flex-direction: column;
+}
+
+#progress-time>h2 {
+    margin: 0.5rem 0;
+}
+
+#progress-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#country-time>form {
+    font-size: larger;
+}
+
+#countries-flag {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem 0;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+#countries-flag img {
+    width: 100px;
+    padding: 0 0.5rem;
+}
+
+#countries-flag img:hover {
+    background-color: rgb(72, 72, 72);
+}
+
+
+
+@media(min-width:375px) {
+    #countries-flag {
+        grid-template-columns: repeat(2, 1fr);
+        ;
+    }
+}
+
+@media(min-width:425px) {
+    #countries-timezone>div {
+        gap: 0;
+        margin-top: 0.2rem;
+    }
+
+    #countries-timezone>div>input,
+    #countries-timezone>div>select {
+        width: 100%;
+    }
+
+    #country-form>div {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    #country-form>div>select {
+        width: 70%;
+    }
+
+    #country-form>div input {
+        width: 30%;
+    }
+}
+
+@media(min-width:600px) {
+    #countries-flag {
+        grid-template-columns: repeat(3, 1fr);
+        ;
+    }
+}
+
+@media(min-width:768px) {
+    .form-img {
+        transform: rotate(0);
+        margin: 0.5rem;
+    }
+
+    .form-data-result {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    #progress-time {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #from-to-form {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #from-to-form>div {
+        width: fit-content;
+        margin: 3rem 0;
+    }
+
+    #from-to-form input {
+        width: 12.6rem;
+    }
+
+    #from-to-form input[type="submit"] {
+        width: 20%;
+        margin: 0.5rem;
+    }
+
+    #current-info {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, min-content);
+        grid-auto-flow: column;
+    }
+
+    #countries-flag {
+        grid-template-columns: repeat(4, 1fr);
+        ;
+    }
+
+    #countries-timezone {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    #countries-timezone>div {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 0.2rem;
+    }
+
+    #countries-timezone>div>input,
+    #countries-timezone>div>select {
+        width: 90%;
+    }
+
+    #country-form>div>select {
+        width: 60%;
+    }
+
+    #country-form>div input {
+        width: 40%;
+    }
+}
+
+@media(min-width:1024px) {
+    #countries-flag {
+        grid-template-columns: repeat(6, 1fr);
+        ;
+    }
+
+    #from-to-form input {
+        width: 15rem;
+    }
+
+    #from-to-form input[type="submit"] {
+        width: 25%;
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+}
+
+@media(min-width:1440px) {
+    #countries-flag {
+        grid-template-columns: repeat(8, 1fr);
+        ;
+    }
+}

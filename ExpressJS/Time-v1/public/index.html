@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Time</title>
+    <link rel="icon" href="images/time-icon.svg">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1 id="header" class="header">Time-Time</h1>
+    </header>
+
+    <div id="container">
+        <!-- Time Since Calculator -->
+        <div id="time-since-container">
+            <h2 class="header">TimeSince Calculator</h2>
+            <div id="time-since-form">
+                <form id="from-to-form">
+                    <div class="time-since-input">
+                        <label for="fromDate" class="yellow-font">From:</label>
+                        <input type="date" id="fromDate" name="fromDate" required>
+                    </div>
+                    <img src="images/arrow-right.svg" class="form-img right-arrow" alt="right arrow">
+                    <div class="time-since-input">
+                        <label for="toDate" class="yellow-font">To:</label>
+                        <input type="date" id="toDate" name="toDate" required>
+                    </div>
+                    <div class="form-data-result hidden">
+                        <img src="images/arrow-right.svg" class="form-img res-sign" alt="equal sign">
+                        <div id="time-since-res" class="purple-font"></div>
+                    </div>
+                    <input type="submit" name="sumbit-btn" id="time-since-submit-btn" value="Calculate">
+                </form>
+            </div>
+        </div>
+
+        <hr id="time-info-view">
+
+        <!-- Time Info -->
+        <div id="time-info">
+            <h2 class="header">Current Time Details</h2>
+
+            <div id="current-info">
+                <h2>Country : <span id="cur-country"></span></h2>
+                <h2>Current Hour : <span id="cur-hour"></span></h2>
+                <h2>Current Minute : <span id="cur-min"></span></h2>
+                <h2>Current Second : <span id="cur-sec"></span></h2>
+                <h2>Current Milli-Second : <span id="cur-ms"></span></h2>
+                <h2>Current Time : <span id="cur-time"></span></h2>
+                <form id="countries-timezone">
+                    <label for="country-timezone" class="yellow-font">Current Timezone:</label>
+                    <div>
+                        <select name="country-timezone" id="country-timezone"></select>
+                        <input type="submit" value="Get">
+                    </div>
+                </form>
+                <h2>Current Date : <span id="cur-day"></span></h2>
+                <h2>Current Day : <span id="cur-week"></span></h2>
+                <h2>Current Month : <span id="cur-month"></span></h2>
+                <h2>Current Year : <span class="cur-year"></span></h2>
+                <h2>Current Full Date : <span id="cur-date"></span></h2>
+            </div>
+
+            <hr>
+
+            <!-- Progress bars -->
+            <div id="progress-container">
+                <div id="progress-time">
+                    <h2 class="green-font">Elapsed Time</h2>
+                    <h2 class="blue-font">Time Remaining</h2>
+                </div>
+                <div class="progress-status">
+                    <h2 class="yellow-font">Day</h2>
+                    <div class="progress-bar">
+                        <div id="progress-day"></div>
+                    </div>
+                </div>
+                <div class="progress-status">
+                    <h2 class="yellow-font">Week</h2>
+                    <div class="progress-bar">
+                        <div id="progress-week"></div>
+                    </div>
+                </div>
+                <div class="progress-status">
+                    <h2 class="yellow-font">Year</h2>
+                    <div class="progress-bar">
+                        <div id="progress-year"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Time in Other Countries -->
+        <div id="country-time">
+
+            <h2 id="country-title" class="header">Time in Other Countries</h2>
+
+            <form id="country-form">
+                <label for="country-name" class="yellow-font">Country:</label>
+                <div>
+                    <select name="country-name" id="country-name"></select>
+                    <input type="submit" value="Select">
+                </div>
+            </form>
+
+            <div id="countries-flag">
+                <img src="" id="IN" class="flag" alt="india-flag" title="India">
+                <img src="" id="LK" class="flag" alt="sri-lank-flag" title="Sri Lanka">
+                <img src="" id="SG" class="flag" alt="singapore-flag" title="Singapore">
+                <img src="" id="NP" class="flag" alt="nepal-flag" title="Nepal">
+                <img src="" id="BT" class="flag" alt="bhutan-flag" title="Bhutan">
+                <img src="" id="RU" class="flag" alt="russia-flag" title="Russia">
+                <img src="" id="JP" class="flag" alt="japan-flag" title="Japan">
+                <img src="" id="CL" class="flag" alt="chile-flag" title="Chile">
+                <img src="" id="NZ" class="flag" alt="new-zealand-flag" title="New Zealand">
+                <img src="" id="US" class="flag" alt="usa-flag" title="USA">
+                <img src="" id="GB" class="flag" alt="united-kingdom-flag" title="United Kingdom">
+                <img src="" id="GE" class="flag" alt="germany-flag" title="Germany">
+                <img src="" id="IT" class="flag" alt="italy-flag" title="Italy">
+                <img src="" id="FR" class="flag" alt="france-flag" title="France">
+                <img src="" id="GR" class="flag" alt="greece-flag" title="Greece">
+                <img src="" id="AR" class="flag" alt="argentina-flag" title="Argentina">
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <h3>&copy;<span class="cur-year"></span> Lakshay Goyal </h3>
+    </footer>
+
+    <script src="logic.js"></script>
+</body>
+
+</html>
