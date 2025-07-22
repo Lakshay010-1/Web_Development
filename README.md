@@ -1,4 +1,4 @@
-<h1>Topics : </h1>
+<h1>Projects : </h1>
 <ul>
     <li><h2>HTML</h2>
         <ul>
@@ -40,6 +40,7 @@
             <h3>
                 <li>Rock-Paper-Scissors v1</li>
                 <li>Voyager v1</li>
+                <li>To-Do v1</li>
             </h3>
         </ul>
     </li>
@@ -48,6 +49,35 @@
         <ul>
             <h3>
                 <li>Tic-Tac-Toe v1</li>
+            </h3>
+        </ul>
+    </li>
+    <br/>
+    <li><h2>Node.js</h2>
+        <ul>
+            <h3>
+                <li>QR-Generator v1</li>
+                <li>Custom-Logger v1</li>
+                <li>File-Based-List-Maker v1</li>
+                <li>nginx Implementaion</li>
+            </h3>
+        </ul>
+    </li>
+    <br/>
+    <li><h2>Express.js</h2>
+        <ul>
+            <h3>
+                <li>Weather Today v1</li>
+                <li>Time-Time v1</li>
+                <li>Two Operands Calculator v1</li>
+            </h3>
+        </ul>
+    </li>
+    <br/>
+    <li><h2>EJS</h2>
+        <ul>
+            <h3>
+                <li>URL Shortener v1</li>
             </h3>
         </ul>
     </li>
