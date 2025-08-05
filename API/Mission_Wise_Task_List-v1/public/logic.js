@@ -1,34 +1,44 @@
-let isGrid = true;
-let isLightMode = true;
-
 function setLayout(isGrid) {
     const grid = document.querySelector(".grid");
     grid.style.display = isGrid ? "grid" : "flex";
     grid.style.flexDirection = isGrid ? null : "column";
     document.querySelector("#grid-layout").setAttribute("src", "/images/" + ((isGrid) ? "grid-2" : "grid-4") + ".svg");
 }
-function toggleLayout() {
-    isGrid = !isGrid;
+async function toggleLayout() {
+    let isGrid = await fetch("/toggleLayout");
+    isGrid=await isGrid.json();
     setLayout(isGrid);
 }
 
 function setTheme(isLightMode) {
     const theme = document.querySelector("#theme-mode");
-    if (!isLightMode) {
-        theme.setAttribute("src", "/images/light-mode.svg");
-        theme.setAttribute("value", "dark");
-        document.querySelector(".profile-pic").setAttribute("src", "/images/task-logo-dark.svg")
+    if (isLightMode) {
+        theme.setAttribute("src", "/images/moon.svg");
+        document.querySelector(".profile-pic").setAttribute("src", "/images/task-logo.svg");
     } else {
-        theme.setAttribute("src", "/images/night-mode.svg");
-        theme.setAttribute("value", "light");
-        document.querySelector(".profile-pic").setAttribute("src", "/images/task-logo.svg")
+        theme.setAttribute("src", "/images/sun.svg");
+        document.querySelector(".profile-pic").setAttribute("src", "/images/task-logo-dark.svg");
     }
 }
-function toggleTheme() {
-    isLightMode = !isLightMode;
+async function toggleTheme() {
+    let isLightMode = await fetch("/toggleTheme");
+    isLightMode=await isLightMode.json();
     document.body.classList.toggle("dark");
     setTheme(isLightMode);
 }
+
+async function setCurrentThemeLayout(){
+    let iscurGrid = await fetch("/curGridLayout");
+    iscurGrid = await iscurGrid.json()
+    let isCurLightMode = await fetch("/curLightTheme");
+    isCurLightMode = await isCurLightMode.json()
+    if(!isCurLightMode){
+        document.body.classList.toggle("dark");
+    }
+    setLayout(iscurGrid);
+    setTheme(isCurLightMode);
+}
+setCurrentThemeLayout();
 
 const spaces = document.querySelectorAll(".spaces");
 for (let i = 0; i < spaces.length; i++) {

@@ -36,6 +36,23 @@ app.get("/space", async (req, res) => {
     }
 });
 
+app.get("/toggleLayout",async (req,res)=>{
+    const {data:isGrid} = await axios.get(`${API_LINK}/toggleGrid`);
+    res.json(isGrid);
+});
+app.get("/curGridLayout",async (req,res)=>{
+    const {data:isGrid} = await axios.get(`${API_LINK}/curGridLayout`);
+    res.json(isGrid);
+});
+app.get("/toggleTheme",async (req,res)=>{
+    const {data:isLightMode} = await axios.get(`${API_LINK}/toggleLightMode`);
+    res.json(isLightMode);
+});
+app.get("/curLightTheme",async (req,res)=>{
+    const {data:isLightMode} = await axios.get(`${API_LINK}/curThemeMode`);
+    res.json(isLightMode);
+});
+
 app.post("/space", async (req, res) => {
     const { space } = req.body;
     try {
