@@ -2,7 +2,7 @@
 <ul>
     <li>
         <h2>
-            <li> <a href="#">Eisenhower Task Tracker v1</a> </li>
+            <a href="#">Eisenhower Task Tracker v1</a>
         </h2>
     </li>
 </ul>
