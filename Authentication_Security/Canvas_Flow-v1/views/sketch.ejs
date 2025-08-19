@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("partials/header.ejs") %>
+
+<body>
+    <div id="sketch-container">
+        <header>
+            <h1>Canvas Flow</h1>
+            <form action="/logout">
+                <button type="submit">Log Out</button>
+            </form>
+        </header>
+        <form method="POST" action="/submit" id="canvas-form">
+            <canvas id="draw" width="800" height="500"></canvas>
+            <div>
+                <label>
+                    Color
+                    <img src="images/paint-palette.svg" style="height: 30px;" alt="">
+                    :
+                    <input type="color" id="colorPicker" value="#000000"></label>
+                <label>
+                    Brush Size
+                    <img src="images/gui-stroke-width.svg" style="height: 30px;" alt="">
+                    :
+                    <input type="number" id="brushSize" value="1" min="1" max="50"></label>
+                <button type="button" id="eraser"><img src="images/paint-brush.svg" id="eraser-paint-img"
+                        style="height: 20px;" alt=""></button>
+                <button type="button" id="clear"><img src="images/clear-all.svg" style="height: 20px;"
+                        alt=""></button>
+            </div>
+            <input type="hidden" name="drawingData" id="drawingData">
+            <div>
+                <label>Artist:<input type="text" name="username" required placeholder="Artist"></label>
+                <button type="submit">Frame</button>
+            </div>
+        </form>
+    </div>
+
+    <%- include("partials/footer.ejs") %>
+
+    <script src="logic.js"></script>
+    <script>
+        // canvas
+        const canvas = document.getElementById('draw');
+        const ctx = canvas.getContext('2d');
+
+        const colorPicker = document.getElementById('colorPicker');
+        const brushSize = document.getElementById('brushSize');
+        const eraserBtn = document.getElementById('eraser');
+        const clearBtn = document.getElementById('clear');
+        const drawingDataInput = document.getElementById('drawingData');
+
+        let drawing = false;
+        let eraserMode = false;
+        ctx.lineCap = 'round';
+
+        function startDrawing(x, y) {
+            drawing = true;
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+        }
+
+        function drawLine(x, y) {
+            if (!drawing) return;
+            ctx.lineWidth = brushSize.value;
+            ctx.strokeStyle = eraserMode ? '#FFFFFF' : colorPicker.value;
+            ctx.lineTo(x, y);
+            ctx.stroke();
+        }
+
+        function stopDrawing() {
+            drawing = false;
+            ctx.beginPath();
+        }
+
+        // Mouse events
+        document.addEventListener('mouseup', stopDrawing);
+        canvas.addEventListener('mousedown', (e) => startDrawing(e.offsetX, e.offsetY));
+        canvas.addEventListener('mousemove', (e) => drawLine(e.offsetX, e.offsetY));
+        canvas.addEventListener('mouseup', stopDrawing);
+        // canvas.addEventListener('mouseleave', stopDrawing);
+
+        // Touch events
+        canvas.addEventListener('touchstart', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const touch = e.touches[0];
+            startDrawing(touch.clientX - rect.left, touch.clientY - rect.top);
+        });
+
+        canvas.addEventListener('touchmove', (e) => {
+            e.preventDefault();
+            const rect = canvas.getBoundingClientRect();
+            const touch = e.touches[0];
+            drawLine(touch.clientX - rect.left, touch.clientY - rect.top);
+        });
+
+        canvas.addEventListener('touchend', stopDrawing);
+
+        // Toolbar actions
+        const EraserPaintChoiceBtn = document.querySelector("#eraser-paint-img");
+        eraserBtn.addEventListener('click', () => {
+            eraserMode = !eraserMode;
+            EraserPaintChoiceBtn.setAttribute("src", `images/${eraserMode ? 'eraser-clean' : 'paint-brush'}.svg`);
+        });
+
+        clearBtn.addEventListener('click', () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+
+        // Convert canvas to Base64 before submit
+        document.querySelector('form').addEventListener('submit', function () {
+            drawingDataInput.value = canvas.toDataURL('image/png');
+        });
+    </script>
+</body>
+
+</html>
