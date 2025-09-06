@@ -12,6 +12,13 @@
 <h3>
     <ol>
         <li>
+            <strong><u>Open Authorization (OAuth 2.0)</u></strong>
+            <ul>
+                <li>Uses OAuth for single sign-on.</li>
+                <li>No password storage; relies on external identity provider.</li>
+            </ul>
+        </li>
+        <li>
             <strong><u>Level 1 – Basic Authentication (Plaintext Passwords)</u></strong>
             <ul>
                 <li>Stores and compares raw passwords.</li>
@@ -52,10 +59,11 @@
         </li>
         <br>
         <li>
-            <strong><u>Level 6 – Open Authorization (OAuth 2.0)</u></strong>
+            <strong><u>Level 6 – JWT Token</u></strong>
             <ul>
-                <li>Uses OAuth for single sign-on.</li>
-                <li>No password storage; relies on external identity provider.</li>
+                <li>Uses JSON Web Tokens for stateless authentication (no sessions stored on server).</li>
+                <li>Tokens are signed and sent with each request, enabling secure APIs.</li>
+                <li>Scales well for distributed systems and mobile clients.</li>
             </ul>
         </li>
     </ol>
