@@ -40,11 +40,21 @@
             <h3>
                 <li>Rock-Paper-Scissors v1</li>
                 <li>Voyager v1</li>
-                <li>To-Do v1</li>
+                <li>To Do v1</li>
             </h3>
         </ul>
     </li>
     <br/>
+    <!-- <li><h2>TypeScript</h2>
+        <ul>
+            <h3>
+                <li></li>
+                <li></li>
+                <li></li>
+            </h3>
+        </ul>
+    </li>
+    <br/> -->
     <li><h2>jQuery</h2>
         <ul>
             <h3>
@@ -77,9 +87,69 @@
     <li><h2>EJS</h2>
         <ul>
             <h3>
-                <li>URL Shortener v1</li>
+                <li>Shrink Route v1 (URL Shortener)</li>
             </h3>
         </ul>
     </li>
     <br/>
+    <li><h2>API</h2>
+        <ul>
+            <h3>
+                <li>Eisenhower Task Tracker v1</li>
+            </h3>
+        </ul>
+    </li>
+    <br/>
+    <li><h2>Database</h2>
+        <ul>
+            <h3>
+                <li>Eisenhower Task Tracker v2 (Relational Database) </li>
+                <li>Eisenhower Task Tracker v3 (Non-Relational Database) </li>
+            </h3>
+        </ul>
+    </li>
+    <br/>
+    <li><h2>Authentication Security</h2>
+        <ul>
+            <h3>
+                <li>Canvas Flow-v1</li>
+            </h3>
+        </ul>
+    </li>
+    <br/>
+    <li><h2>Backend</h2>
+        <ul>
+            <h3>
+                <li>Canvas Flow-v2</li>
+            </h3>
+        </ul>
+    </li>
+    <br/>
+    <!-- <li><h2>React</h2>
+        <ul>
+            <h3>
+                <li></li>
+                <li></li>
+            </h3>
+        </ul>
+    </li>
+    <br/>
+    <li><h2>Redux</h2>
+        <ul>
+            <h3>
+                <li></li>
+                <li></li>
+            </h3>
+        </ul>
+    </li>
+    <br/>
+    <li><h2>NextJS</h2>
+        <ul>
+            <h3>
+                <li></li>
+                <li></li>
+            </h3>
+        </ul>
+    </li>
+    <br/> -->
 </ul>
