@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+
+
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script type="text/babel">
+        function App() {
+            const [time, setTime] = React.useState(new Date().toLocaleString());
+            React.useEffect(function () {
+                setInterval(function () {
+                    setTime(new Date().toLocaleString());
+                }, 1000);
+            }, []);
+            return React.createElement("header", null, `Current Time => ${time}`);
+        }
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(React.createElement(App));
+    </script>
+</body>
+
+</html>
