@@ -47,7 +47,7 @@ footer {
     margin-top: 4rem;
     display: flex;
     justify-content: space-around;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     color: #b1c100;
     font-size: large;
 }
@@ -353,10 +353,11 @@ header h2 {
     overflow: hidden;
 }
 
-#footer-credits{
+#footer-credits {
     margin: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #footer-icon:hover,
@@ -441,12 +442,14 @@ header h2 {
     #diff-expand-container {
         width: 100%;
         grid-template-columns: min-content;
+        grid-template-rows: min-content;
     }
 }
 
 @media(max-width:545px) {
     footer {
         flex-direction: column;
+        padding-bottom: 2rem;
     }
 
     #content {
@@ -458,7 +461,7 @@ header h2 {
     }
 
     #footer-credits {
-        font-size: large;
+        font-size: larger;
     }
 }
 
