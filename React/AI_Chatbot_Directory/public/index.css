@@ -448,7 +448,6 @@ header h2 {
 
 @media(max-width:545px) {
     footer {
-        flex-direction: column;
         padding-bottom: 2rem;
     }
 
@@ -461,6 +460,7 @@ header h2 {
     }
 
     #footer-credits {
+        flex-direction: column;
         font-size: larger;
     }
 }
