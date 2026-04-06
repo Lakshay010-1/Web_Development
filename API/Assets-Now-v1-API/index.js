@@ -6,7 +6,7 @@ dotenv.config({ path: "./.env" });
 const app = express();
 app.use(cors());
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 const exchangerateKEY = process.env.EXCHANGE_RATE_API_KEY;
 const coingeckoKEY = process.env.COINGECKO_API_KEY;
 const rapidKEY = process.env.RAPID_API_KEY;
