@@ -1,15 +1,5 @@
 export const projects = [
     {
-        id: 0,
-        title: "AI Chatbot Directory",
-        desc: "Developed an AI Chatbot Directory that enables users to discover and compare various AI chatbots through a structured and interactive interface.",
-        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077996/ai_chatbot_dir_v1_ljsfuh.png",
-        technologies: ["React"],
-        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/React/AI_Chatbot_Directory",
-        hostedOnUrl: "https://lakshaygoyal-lg-ai-chatbot-dir-v1.vercel.app/",
-        category: "Web App"
-    },
-    {
         id: 1,
         title: "Assets Now",
         desc: "Developed Assets Now, a financial dashboard using React that integrates multiple APIs to provide real-time and historical data for stocks, cryptocurrencies, forex, and commodities, along with financial news.",
@@ -20,73 +10,23 @@ export const projects = [
         category: "Web App"
     },
     {
-        id: 2,
-        title: "Shrink Route",
-        desc: "Developed a URL Shortener application using Node.js and Express.js, utilizing turl to generate shortened links and EJS for dynamic rendering, enabling users to efficiently create and manage compact URLs.",
-        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077991/shrink_route_v1_llbgep.png",
-        technologies: ["tURL", "Node.js", "Express.js", "EJS"],
-        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/EJS/URL-Shortener-v1",
-        hostedOnUrl: "https://lakshaygoyal-shrinkroute-v1.onrender.com",
+        id: 0,
+        title: "AI Chatbot Directory",
+        desc: "Developed an AI Chatbot Directory that enables users to discover and compare various AI chatbots through a structured and interactive interface.",
+        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077996/ai_chatbot_dir_v1_ljsfuh.png",
+        technologies: ["React"],
+        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/React/AI_Chatbot_Directory",
+        hostedOnUrl: "https://lakshaygoyal-lg-ai-chatbot-dir-v1.vercel.app/",
         category: "Web App"
     },
     {
-        id: 3,
-        title: "Rocks Rock (v3)",
-        desc: "Developed a responsive rock exploration club website, Rocks Rock, using Bootstrap, providing information on rocks, minerals, and fossils along with resources such as guides, events, workshops, and community forums, enabling users to explore, learn, and engage with fellow enthusiasts.",
-        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077992/rocks_rock_v3_dgvcdc.png",
-        technologies: ["Bootstrap"],
-        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/Bootstrap/Rocks_Rock_v3",
-        hostedOnUrl: "https://lakshaygoyal-lg.github.io/rocks-rock-v3/",
-        category: "Web App"
-    },
-    {
-        id: 4,
-        title: "Rocks Rock (v2)",
-        desc: "Developed a rock exploration club website, Rocks Rock, using HTML and CSS to present information on rocks, minerals, and community activities with a clean, responsive design.",
-        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077991/rocks_rock_v2_g9zjjt.png",
-        technologies: ["HTML", "CSS"],
-        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/CSS/Rocks_Rock_v2",
-        hostedOnUrl: "https://lakshaygoyal-lg.github.io/rocks-rock-v2/",
-        category: "Web App"
-    },
-    {
-        id: 5,
-        title: "Rocks Rock (v1)",
-        desc: "Developed a static rock exploration club website, Rocks Rock (v1), using HTML to present information on rocks, minerals, and community activities in a structured format.",
-        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077991/rocks_rock_v1_lu1epd.png",
-        technologies: ["HTMl"],
-        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/HTML/Rocks_Rock_v1",
-        hostedOnUrl: "https://lakshaygoyal-lg.github.io/rocks-rock-v1/",
-        category: "Web App"
-    },
-    {
-        id: 6,
-        title: "Resume (v3)",
-        desc: "Developed a personal resume website (v3) using HTML and Tailwind CSS, featuring a modern, responsive design for clear and structured presentation of projects, skills, and contact information.",
-        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077991/resume_v3_xmatba.png",
-        technologies: ["HTML", "Tailwind CSS"],
-        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/Tailwind_CSS/Resume_v3",
-        hostedOnUrl: "https://lakshaygoyal-lg.github.io/resume-v3/",
-        category: "Web App"
-    },
-    {
-        id: 7,
-        title: "Resume (v2)",
-        desc: "Developed a personal resume website using HTML and CSS to present projects, technical skills, and contact information, featuring a clean, responsive layout for clear and professional presentation.",
-        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077990/resume_v2_ncitxi.png",
-        technologies: ["HTML", "CSS"],
-        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/CSS/Resume_v2",
-        hostedOnUrl: "https://lakshaygoyal-lg.github.io/resume-v2/",
-        category: "Web App"
-    },
-    {
-        id: 8,
-        title: "Resume (v1)",
-        desc: "Developed a static resume website (v1) using HTML to present personal, educational, and project details in a structured format.",
-        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077990/resume_v1_hrnz10.png",
-        technologies: ["HTML"],
-        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/HTML/Resume_v1",
-        hostedOnUrl: "https://lakshaygoyal-lg.github.io/resume-v1/",
+        id: 11,
+        title: "Voyager Twins",
+        desc: "Developed a Voyager Twin web application using HTML, CSS, and JavaScript to showcase mission data, discoveries, and distance metrics of the Voyager spacecraft.",
+        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077990/voyager_v1_tayqsl.png",
+        technologies: ["HTML", "CSS", "JavaScript"],
+        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/JavaScript/Voyager-v1",
+        hostedOnUrl: "https://lakshaygoyal-lg.github.io/voyager-v1/",
         category: "Web App"
     },
     {
@@ -110,13 +50,53 @@ export const projects = [
         category: "Web App"
     },
     {
-        id: 11,
-        title: "Voyager Twins",
-        desc: "Developed a Voyager Twin web application using HTML, CSS, and JavaScript to showcase mission data, discoveries, and distance metrics of the Voyager spacecraft.",
-        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077990/voyager_v1_tayqsl.png",
+        id: 14,
+        title: "Task Lifecycle Tracker",
+        desc: "Developed a To-Do application, enabling task management across three categories—start, ongoing, and completed—through a structured and interactive interface.",
+        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077992/to_do_v1_cukjic.png",
         technologies: ["HTML", "CSS", "JavaScript"],
-        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/JavaScript/Voyager-v1",
-        hostedOnUrl: "https://lakshaygoyal-lg.github.io/voyager-v1/",
+        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/JavaScript/to-do-v1",
+        hostedOnUrl: "https://lakshaygoyal-lg.github.io/to-do-v1/",
+        category: "Web App"
+    },
+    {
+        id: 17,
+        title: "Eisenhower Task Tracker API",
+        desc: "Developed an Eisenhower Task Tracker API using Node.js and Express.js, enabling task categorization based on urgency and importance, with dynamic rendering support via EJS and API integration using Axios.",
+        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077989/eisenhower_task_tracker_api_fbjsye.png",
+        technologies: ["Axios", "Express.js", "Node.js", "EJS"],
+        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/API/Eisenhower_Task_Tracker-v1",
+        hostedOnUrl: "https://documenter.getpostman.com/view/39024007/2sB3BEnVS2",
+        category: "API"
+    },
+    {
+        id: 2,
+        title: "Shrink Route",
+        desc: "Developed a URL Shortener application using Node.js and Express.js, utilizing turl to generate shortened links and EJS for dynamic rendering, enabling users to efficiently create and manage compact URLs.",
+        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077991/shrink_route_v1_llbgep.png",
+        technologies: ["tURL", "Node.js", "Express.js", "EJS"],
+        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/EJS/URL-Shortener-v1",
+        hostedOnUrl: "https://lakshaygoyal-shrinkroute-v1.onrender.com",
+        category: "Web App"
+    },
+    {
+        id: 3,
+        title: "Rocks Rock (v3)",
+        desc: "Developed a responsive rock exploration club website, Rocks Rock, using Bootstrap, providing information on rocks, minerals, and fossils along with resources such as guides, events, workshops, and community forums, enabling users to explore, learn, and engage with fellow enthusiasts.",
+        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077992/rocks_rock_v3_dgvcdc.png",
+        technologies: ["Bootstrap"],
+        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/Bootstrap/Rocks_Rock_v3",
+        hostedOnUrl: "https://lakshaygoyal-lg.github.io/rocks-rock-v3/",
+        category: "Web App"
+    },
+    {
+        id: 6,
+        title: "Resume (v3)",
+        desc: "Developed a personal resume website (v3) using HTML and Tailwind CSS, featuring a modern, responsive design for clear and structured presentation of projects, skills, and contact information.",
+        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077991/resume_v3_xmatba.png",
+        technologies: ["HTML", "Tailwind CSS"],
+        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/Tailwind_CSS/Resume_v3",
+        hostedOnUrl: "https://lakshaygoyal-lg.github.io/resume-v3/",
         category: "Web App"
     },
     {
@@ -130,6 +110,46 @@ export const projects = [
         category: "Web App"
     },
     {
+        id: 4,
+        title: "Rocks Rock (v2)",
+        desc: "Developed a rock exploration club website, Rocks Rock, using HTML and CSS to present information on rocks, minerals, and community activities with a clean, responsive design.",
+        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077991/rocks_rock_v2_g9zjjt.png",
+        technologies: ["HTML", "CSS"],
+        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/CSS/Rocks_Rock_v2",
+        hostedOnUrl: "https://lakshaygoyal-lg.github.io/rocks-rock-v2/",
+        category: "Web App"
+    },
+    {
+        id: 7,
+        title: "Resume (v2)",
+        desc: "Developed a personal resume website using HTML and CSS to present projects, technical skills, and contact information, featuring a clean, responsive layout for clear and professional presentation.",
+        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077990/resume_v2_ncitxi.png",
+        technologies: ["HTML", "CSS"],
+        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/CSS/Resume_v2",
+        hostedOnUrl: "https://lakshaygoyal-lg.github.io/resume-v2/",
+        category: "Web App"
+    },
+    {
+        id: 5,
+        title: "Rocks Rock (v1)",
+        desc: "Developed a static rock exploration club website, Rocks Rock (v1), using HTML to present information on rocks, minerals, and community activities in a structured format.",
+        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077991/rocks_rock_v1_lu1epd.png",
+        technologies: ["HTMl"],
+        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/HTML/Rocks_Rock_v1",
+        hostedOnUrl: "https://lakshaygoyal-lg.github.io/rocks-rock-v1/",
+        category: "Web App"
+    },
+    {
+        id: 8,
+        title: "Resume (v1)",
+        desc: "Developed a static resume website (v1) using HTML to present personal, educational, and project details in a structured format.",
+        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077990/resume_v1_hrnz10.png",
+        technologies: ["HTML"],
+        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/HTML/Resume_v1",
+        hostedOnUrl: "https://lakshaygoyal-lg.github.io/resume-v1/",
+        category: "Web App"
+    },
+    {
         id: 13,
         title: "Rock Paper Scissors",
         desc: "Developed a Rock-Paper-Scissors web application using HTML, CSS, and JavaScript, generating random outcomes on each page reload without user input.",
@@ -138,16 +158,6 @@ export const projects = [
         sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/JavaScript/Rock-Paper-Scissors-v1",
         hostedOnUrl: "https://lakshaygoyal-lg.github.io/rock-paper-scissors-v1/",
         category: "Web Game"
-    },
-    {
-        id: 14,
-        title: "Task Lifecycle Tracker",
-        desc: "Developed a To-Do application, enabling task management across three categories—start, ongoing, and completed—through a structured and interactive interface.",
-        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077992/to_do_v1_cukjic.png",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/JavaScript/to-do-v1",
-        hostedOnUrl: "https://lakshaygoyal-lg.github.io/to-do-v1/",
-        category: "Web App"
     },
     {
         id: 15,
@@ -168,16 +178,6 @@ export const projects = [
         sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/ExpressJS/Two_Operands_Calc-v1",
         hostedOnUrl: "https://lakshaygoyal-2op-calc-v1.netlify.app/",
         category: "Web App"
-    },
-    {
-        id: 17,
-        title: "Eisenhower Task Tracker API",
-        desc: "Developed an Eisenhower Task Tracker API using Node.js and Express.js, enabling task categorization based on urgency and importance, with dynamic rendering support via EJS and API integration using Axios.",
-        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077989/eisenhower_task_tracker_api_fbjsye.png",
-        technologies: ["Axios", "Express.js", "Node.js", "EJS"],
-        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/API/Eisenhower_Task_Tracker-v1",
-        hostedOnUrl: "https://documenter.getpostman.com/view/39024007/2sB3BEnVS2",
-        category: "API"
     },
     {
         id: 18,

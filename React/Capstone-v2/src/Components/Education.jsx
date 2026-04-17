@@ -69,6 +69,7 @@ const CertificateItemBody = styled.div`
         height:fit-content;
         padding:0.5rem;
         text-decoration:none;
+        text-align:center;
 
         &:hover{
             color:${({ theme }) => theme.textColor5};

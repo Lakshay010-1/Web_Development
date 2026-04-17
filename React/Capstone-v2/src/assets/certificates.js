@@ -16,28 +16,12 @@ export const certifications = [
         url: "https://badges.parchment.com/public/assertions/cthtVXVjQ5OqthVn2zA6nA"
     },
     {
-        id: 0,
+        id: 5,
         img: "images/certificates/hackerrank.png",
-        role: "Java Basics",
+        role: "SQL (Advanced)",
         company: "HackerRank",
-        desc: "Demonstrates foundational proficiency in Java, including syntax, object-oriented programming principles, and basic problem-solving using core language constructs.",
-        url: "https://www.hackerrank.com/certificates/431cd4cee9ec"
-    },
-    {
-        id: 1,
-        img: "images/certificates/hackerrank.png",
-        role: "Problem Solving (Basic)",
-        company: "HackerRank",
-        desc: "Validates understanding of fundamental algorithms, data structures, and logical reasoning required to solve entry-level coding challenges.",
-        url: "https://www.hackerrank.com/certificates/1a095b306fa9"
-    },
-    {
-        id: 2,
-        img: "images/certificates/hackerrank.png",
-        role: "SQL (Basic)",
-        company: "HackerRank",
-        desc: "Covers essential database querying skills, including SELECT statements, filtering, joins, and aggregations for structured data retrieval.",
-        url: "https://www.hackerrank.com/certificates/9d5571d785a2"
+        desc: "Showcases expertise in complex SQL operations such as window functions, query optimization, indexing, and efficient data modeling for scalable systems.",
+        url: "https://www.hackerrank.com/certificates/528a6960fd6e"
     },
     {
         id: 3,
@@ -56,19 +40,35 @@ export const certifications = [
         url: "https://www.hackerrank.com/certificates/bc1426d4274f"
     },
     {
-        id: 5,
-        img: "images/certificates/hackerrank.png",
-        role: "SQL (Advanced)",
-        company: "HackerRank",
-        desc: "Showcases expertise in complex SQL operations such as window functions, query optimization, indexing, and efficient data modeling for scalable systems.",
-        url: "https://www.hackerrank.com/certificates/528a6960fd6e"
-    },
-    {
         id: 6,
         img: "images/certificates/hackerrank.png",
         role: "SQL (Intermediate)",
         company: "HackerRank",
         desc: "Demonstrates proficiency in writing advanced queries involving subqueries, joins, grouping, and performance optimization techniques for real-world data scenarios.",
         url: "https://www.hackerrank.com/certificates/0cf7110fefa6"
+    },
+    {
+        id: 1,
+        img: "images/certificates/hackerrank.png",
+        role: "Problem Solving (Basic)",
+        company: "HackerRank",
+        desc: "Validates understanding of fundamental algorithms, data structures, and logical reasoning required to solve entry-level coding challenges.",
+        url: "https://www.hackerrank.com/certificates/1a095b306fa9"
+    },
+    {
+        id: 2,
+        img: "images/certificates/hackerrank.png",
+        role: "SQL (Basic)",
+        company: "HackerRank",
+        desc: "Covers essential database querying skills, including SELECT statements, filtering, joins, and aggregations for structured data retrieval.",
+        url: "https://www.hackerrank.com/certificates/9d5571d785a2"
+    },
+    {
+        id: 0,
+        img: "images/certificates/hackerrank.png",
+        role: "Java Basics",
+        company: "HackerRank",
+        desc: "Demonstrates foundational proficiency in Java, including syntax, object-oriented programming principles, and basic problem-solving using core language constructs.",
+        url: "https://www.hackerrank.com/certificates/431cd4cee9ec"
     },
 ];
