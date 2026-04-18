@@ -28,7 +28,7 @@ export const skills = [
             },
             {
                 name: "Next Js",
-                image: "https://cdn.worldvectorlogo.com/logos/nextjs-2.svg",
+                image: "https://cdn.worldvectorlogo.com/logos/next-js.svg",
             },
             {
                 name: "jQuery",
@@ -65,7 +65,7 @@ export const skills = [
             },
             {
                 name: "EJS",
-                image: "https://seeklogo.com/images/E/ejs-logo-7B3E9F0E07-seeklogo.com.png",
+                image: "https://img.icons8.com/?size=96&id=Pxe6MGswB8pX&format=png",
             },
             {
                 name: "Mongoose",
@@ -102,7 +102,7 @@ export const skills = [
             },
             {
                 name: "C",
-                image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg",
+                image: "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg",
             },
         ],
     },
