@@ -8,7 +8,7 @@ export default function Footer() {
             </a>
             <div id="footer-credits">
                 <span>&copy; {new Date().getFullYear()}</span>
-                <a href="https://lakshaygoyal-lg-portfolio.vercel.app/">
+                <a href="https://lakshaygoyal-lg.vercel.app">
                     Lakshay Goyal</a>
             </div>
         </footer>
