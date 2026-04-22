@@ -12,7 +12,7 @@ export default function SearchResultItem(props) {
                     {
                         props.selectedSearchItemResult?.data && (Object.keys(props.selectedSearchItemResult.data).length > (props.searchAssetType == "Stock" ? 1 : 0)) ?
                             (props.selectedSearchItemResult.data?.apiLimit) ?
-                                <div className='temp-unavail'>Service is temporarily unavailable. Please try again in a while</div>
+                                <div className='temp-unavail'>Service is temporarily unavailable. Please try again in a while  (API LIMIT REACHED)</div>
                                 :
                                 <div id='asset-result-item'>
                                     <div className='stock-crypto-top'>

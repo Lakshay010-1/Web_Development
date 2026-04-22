@@ -15,10 +15,9 @@ export default function Form(props) {
 
     function onSubmit(event) {
         event.preventDefault();
-        props.setSearchAssetType(selectedTypeOption);
-        props.setSearchAssetValue(selectedAssetValue);
-        !props.keepInSearchBox && setTypeOption("");
-        !props.keepInSearchBox && setAssetValue("");
+        props?.handleSearchAssetHisType && props.handleSearchAssetHisType(selectedTypeOption);
+        props?.setSearchAssetType && props.setSearchAssetType({ type: "setType", payload: selectedTypeOption });
+        props.setSearchAssetValue({ type: "setValue", payload: selectedAssetValue });
     }
 
     return (

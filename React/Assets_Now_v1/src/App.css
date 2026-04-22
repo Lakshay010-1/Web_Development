@@ -8,6 +8,7 @@
     --primary-bg-color-5: rgba(80, 80, 80, 0.5);
     --primary-bg-color-6: rgba(26, 26, 26, 0.7);
     --primary-bg-color-7: rgba(80, 80, 80, 0.5);
+    --primary-bg-color-8: rgba(255, 255, 255, 0.5);
     --primary-text-color: black;
     --text-color-2: whitesmoke;
     --bg-color: rgba(161, 192, 255, 0.8);
@@ -30,6 +31,7 @@ body.dark-mode {
     --primary-bg-color-5: rgba(85, 85, 85, 0.5);
     --primary-bg-color-6: rgba(255, 255, 255, 0.7);
     --primary-bg-color-7: rgba(179, 179, 179, 0.5);
+    --primary-bg-color-8: rgba(0, 0, 0, 0.5);
     --primary-text-color: whitesmoke;
     --text-color-2: black;
     --bg-color: rgba(172, 198, 251);
@@ -234,6 +236,7 @@ header>div {
     background-color: red;
     height: max-content;
     text-align: center;
+    padding: 2rem 1rem;
 }
 
 .crypto-item {
@@ -476,7 +479,7 @@ header>div {
     display: flex;
 }
 
-.loader{
+.loader {
     padding: 1rem;
 }
 
@@ -602,6 +605,12 @@ header>div {
     gap: 1rem;
     overflow-x: auto;
     padding: 1rem;
+    background-color: var(--primary-bg-color-8);
+}
+
+#assets-bar>p {
+    text-align: center;
+    width: 100%;
 }
 
 #header-title {

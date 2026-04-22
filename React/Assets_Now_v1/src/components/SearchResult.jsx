@@ -10,7 +10,7 @@ export default function SearchResult(props) {
     const [currentResultWindowStatus, setToggleResultWindowStatus] = useState(false);
     const [assetResultBorderColour, setAssetResultBorderColour] = useState("black")
     const [loadingSearchResultItem, setLoadingSearchResultItem] = useState(false);
-    const APILINK=import.meta.env.VITE_API_LINK;
+    const APILINK = import.meta.env.VITE_API_LINK;
     const prevTitleRef = useRef("");
 
 
@@ -130,14 +130,12 @@ export default function SearchResult(props) {
         if (!currentResultWindowStatus) {
             return;
         }
-        props.setDocTitle(prev => {
-            prevTitleRef.current = prev;
-            return `${selectedSearchItemSymbol?.symbol ? selectedSearchItemSymbol.symbol : props.searchAssetValue} | ${prev}`;
-        });
+        prevTitleRef.current = props.docTitle;
+        props.setDocTitle({ type: "setTitle", payload: `${selectedSearchItemSymbol?.symbol ? selectedSearchItemSymbol.symbol : props.searchAssetValue} | ${prevTitleRef.current}` });
         return () => {
-            props.setDocTitle(prevTitleRef.current);
+            props.setDocTitle({ type: "setTitle", payload: prevTitleRef.current });
         }
-    }, [currentResultWindowStatus, props.searchAssetValue, selectedSearchItemSymbol]);
+    }, [currentResultWindowStatus, selectedSearchItemSymbol]);
 
 
     return (
@@ -150,7 +148,7 @@ export default function SearchResult(props) {
             }
 
             {
-                props.loadingSearchResult
+                props.loadingSearchResult=="loading"
                     ?
                     <Loader message={props.searchAssetType == "Stock" ? "Stocks" : props.searchAssetType == "Crypto" ? "Crypto Currencies" : "Result"} />
                     :
@@ -199,7 +197,7 @@ export default function SearchResult(props) {
                                     <button className='add-to-list-btn' onClick={() => addToWatchListFn(createWatchlistID())} >Add to Watchlist</button>
                                 </div >
                                 :
-                                <div className='temp-unavail'>Service is temporarily unavailable. Please try again in a while</div>)
+                                <div className='temp-unavail'>Service is temporarily unavailable. Please try again in a while (API LIMIT REACHED)</div>)
                         }
                         {
                             (props.searchAssetType == "Crypto" && Array.isArray(props.data)) && props.data.map((crypto, idx) => {

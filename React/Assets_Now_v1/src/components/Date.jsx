@@ -12,7 +12,7 @@ export default function Date(props) {
                 <DemoItem label={props.label} >
                     <DatePicker className="asset-date" value={props.value ? dayjs(props.value) : null} onChange={(newVal) => {
                         const formatted = newVal ? newVal.format("YYYY-MM-DD") : null;
-                        props.handleChange(props.source, formatted);
+                        props.handleChange({ type: (props.source == "to" ? "setTo" : "setFrom"), payload: formatted });
                     }} />
                 </DemoItem>
             </LocalizationProvider>

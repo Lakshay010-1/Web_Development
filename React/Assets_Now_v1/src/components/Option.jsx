@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -7,7 +7,12 @@ import Select from '@mui/material/Select';
 import Loader from './Loader';
 
 export default function Option(props) {
-    props?.lockStatus && props.handleChange(props.selectedOption);
+    useEffect(() => {
+        async function setOption() {
+            props.handleChange(props.selectedOption);
+        }
+        setOption();
+    }, [props.lockStatus]);
     return (
         <Box sx={{ minWidth: 120 }}>
             <FormControl fullWidth>
@@ -21,7 +26,7 @@ export default function Option(props) {
                     disabled={props?.lockStatus && "disable"}
                 >
                     {
-                        props.loadingStatus
+                        props.loadingStatus == "loading"
                             ?
                             <MenuItem key="loading-options" disabled>
                                 <Loader message={props.loaderMSG} />
