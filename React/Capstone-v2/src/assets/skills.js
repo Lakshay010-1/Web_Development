@@ -39,20 +39,20 @@ export const skills = [
                 image: "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
             },
             {
-                name: "CSS Modules",
-                image: "https://www.pngfind.com/pngs/m/683-6835747_css-modules-logo-hd-png-download.png",
-            },
-            {
-                name: "styled-components",
-                image: "https://avatars.githubusercontent.com/u/20658825?s=200&v=4",
-            },
-            {
                 name: "Tailwind CSS",
                 image: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
             },
             {
                 name: "SASS",
                 image: "https://cdn.worldvectorlogo.com/logos/sass-1.svg",
+            },
+            {
+                name: "CSS Modules",
+                image: "https://www.pngfind.com/pngs/m/683-6835747_css-modules-logo-hd-png-download.png",
+            },
+            {
+                name: "styled-components",
+                image: "https://avatars.githubusercontent.com/u/20658825?s=200&v=4",
             },
         ],
     },
