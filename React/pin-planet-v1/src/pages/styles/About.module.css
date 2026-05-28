@@ -1,0 +1,23 @@
+.aboutContent {
+    background-image: linear-gradient(rgba(28, 30, 22, 0.7),
+            rgba(15, 19, 2, 0.7)),
+        url("images/beach.jpg");
+    background-size: cover;
+
+}
+
+.about {
+    color: var(--color-brand-1);
+    height: 80%;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutIntro,
+.aboutFooter {
+    color: var(--color-brand-10);
+}

@@ -1,0 +1,14 @@
+.authenticate {
+    height: 100%;
+}
+
+.authenticate section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+
+    /* flex-direction: column; */
+    /* background-image: url("https://www.transparenttextures.com/patterns/ecailles.png"); */
+}
+

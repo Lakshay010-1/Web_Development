@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    transition: background-color 0.3s ease;
+    background-color: rgb(from var(--color-brand-9) r g b / 0.21);
+}
+
+.footer:hover {
+    background-color: rgb(from var(--color-brand-9) r g b / 0.27);
+
+}
+
+.socialsContainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    width: 10%;
+}
+
+.footer h1,
+.footer p {
+    color: var(--color-brand-1);
+}
+
+a {
+    color: var(--color-brand-10);
+}
+
+a:hover {
+    color: var(--color-brand-5);
+}
+
+a:active {
+    color: var(--color-brand-9);
+
+}

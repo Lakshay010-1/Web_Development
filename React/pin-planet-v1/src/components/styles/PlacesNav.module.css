@@ -1,0 +1,38 @@
+.nav {
+    padding: 1.5rem 0;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--color-brand-9);
+    gap: 0.5rem;
+    border-radius: 7px;
+}
+
+.nav li {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.nav a:link,
+.nav a:visited {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+/* CSS Modules feature */
+.nav a:global(.active) {
+    background-color: var(--color-brand-10);
+    color: var(--color-brand-9);
+}

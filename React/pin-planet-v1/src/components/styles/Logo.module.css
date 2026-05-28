@@ -1,0 +1,22 @@
+.logoContainer {
+    display: flex;
+    gap: 1rem;
+    /* text-decoration: none; */
+    align-items: center;
+    /* color: rgb(0, 0, 88); */
+
+}
+
+.logoContainer img {
+    height: 4rem;
+}
+
+.logoContainer h1 {
+    margin: 0;
+    font-weight: 450;
+}
+
+.logoContainer:hover img{
+    transform: scale(105%);
+    transition: all ease-in-out 0.2s;
+}
