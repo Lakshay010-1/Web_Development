@@ -1,0 +1,84 @@
+.city {
+    padding: 1.5rem 1rem;
+    background-color: var(--text-dark-4);
+    border-radius: 7px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.city h6 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--color-brand-11);
+}
+
+.city h3 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.city h3 span {
+    line-height: 1;
+}
+
+.city p,
+.city a {
+    color: var(--color-brand-1);
+}
+
+.city a:hover {
+    color: var(--color-brand-8);
+}
+
+.placeNote {
+    height: 17vh;
+    overflow-y: auto;
+}
+
+.operationsRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.operationsBtnsRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.operationBtn {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    border-radius: 10%;
+    transition: background-color 1s;
+    transition: color 1s;
+    border: 1px solid var(--text-dark-1);
+    cursor: pointer;
+}
+
+.operationBtn:hover {
+    background-color: black;
+    border: 1px solid var(--color-dark-1);
+}
+
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    height: calc(100vh - 15.5rem);
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}

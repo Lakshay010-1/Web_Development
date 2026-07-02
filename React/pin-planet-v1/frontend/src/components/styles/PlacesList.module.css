@@ -1,0 +1,31 @@
+.message {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 80%;
+    margin: 2rem auto;
+    font-weight: 600;
+}
+
+
+.placeListContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.placeList {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    /* height: calc(100vh - 15.5rem); */
+    height: calc(100vh - 16rem);
+    flex-grow: 1;
+    list-style: none;
+    overflow-x: hidden;
+    gap: 1rem;
+    padding-right: 0.5rem;
+
+}
+
+/* .placeList::-webkit-scrollbar {
+    width: 0;
+} */

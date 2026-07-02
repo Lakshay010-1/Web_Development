@@ -1,0 +1,20 @@
+.logoContainer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.logoContainer img {
+    height: 4rem;
+}
+
+.logoContainer h1 {
+    margin: 0;
+    font-weight: 450;
+}
+
+.logoContainer:hover img{
+    transform: scale(105%);
+    transition: all ease-in-out 0.2s;
+}

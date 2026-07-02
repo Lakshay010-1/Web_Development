@@ -1,0 +1,92 @@
+.card {
+    display: grid;
+    grid-template-areas: "a b b c c c d d e e";
+    padding: 1rem;
+    gap: 1rem;
+    border: 2px solid var(--text-light-1);
+    text-align: center;
+    width: 100%;
+
+}
+
+.card * {
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+
+.card:hover {
+    cursor: alias;
+}
+
+.card.visited {
+    background-color: rgb(from var(--text-color-2) r g b / 0.2);
+    color: var(--text-color-2-4);
+}
+
+.card.visited:hover {
+    background-color: rgb(from var(--text-color-2) r g b / 0.1);
+    border: 2px solid green;
+}
+
+.card.tovisit {
+    background-color: rgb(from var(--text-color-1) r g b / 0.2);
+    color: var(--text-color-1-4);
+}
+
+.card.tovisit:hover {
+    background-color: rgb(from var(--text-color-1) r g b / 0.1);
+    border: 2px solid blue;
+}
+
+.card.missedvisit {
+    background-color: rgb(from var(--color-brand-6) r g b / 0.2);
+    color: var(--color-brand-12);
+}
+
+.card.missedvisit:hover {
+    background-color: rgb(from var(--color-brand-6) r g b / 0.1);
+    border: 2px solid red;
+}
+
+.placeFlag {
+    height: 3rem;
+    width: 4.5rem;
+}
+
+.placeName {
+    display: flex;
+    gap: 0.1rem;
+    flex-wrap: wrap;
+    grid-area: b;
+}
+
+.placeDate {
+    display: flex;
+    flex-direction: column;
+    grid-area: d;
+}
+
+.flagContainer {
+    grid-area: a;
+}
+
+.placeNote {
+    grid-area: c;
+    width: 0.5fr;
+}
+
+
+
+@media(max-width:500px) {
+    .card {
+        grid-template-areas:
+            "a a"
+            "b b"
+            "c c"
+            "d e";
+    }
+
+}
