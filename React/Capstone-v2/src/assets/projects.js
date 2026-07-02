@@ -1,5 +1,15 @@
 export const projects = [
     {
+        id: 25,
+        title: "Pin Planet",
+        desc: "Developed Pin Planet, a travel-focused web application that allows users to save, organize, and track places they have visited or plan to visit. Features include interactive map pinning, trip status management, travel memories, notes, and a responsive dashboard for visualizing travel activity.",
+        technologies: ["React", "Leaflet", "React Router", "Node.js", "Express", "Database", "MongoDB", "Cookies", "Bcrypt"],
+        homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1782969348/Screenshot_2026-07-02_104308_a8up7t.png",
+        sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/React/pin-planet-v1",
+        hostedOnUrl: "https://lakshaygoyal-lg-pin-planet-v1.vercel.app/",
+        category: "Web App",
+    },
+    {
         id: 1,
         title: "Assets Now",
         desc: "Developed Assets Now, a financial dashboard using React that integrates multiple APIs to provide real-time and historical data for stocks, cryptocurrencies, forex, and commodities, along with financial news.",
@@ -250,7 +260,7 @@ export const projects = [
         category: "Web App"
     },
     // {
-    //     id: 25,
+    //     id: 9999,
     //     title: "",
     //     desc: "",
     //     homepageImg: "",
