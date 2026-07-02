@@ -1,3 +1,15 @@
+a {
+    color: var(--color-brand-10);
+}
+
+a:hover {
+    color: var(--color-brand-5);
+}
+
+a:active {
+    color: var(--color-brand-9);
+}
+
 .footer {
     display: flex;
     gap: 0.5rem;
@@ -26,15 +38,11 @@
     color: var(--color-brand-1);
 }
 
-a {
-    color: var(--color-brand-10);
+.footer h1 a {
+    color: var(--color-brand-1);
 }
 
-a:hover {
+.footer h1 a:hover {
+    text-decoration: underline;
     color: var(--color-brand-5);
-}
-
-a:active {
-    color: var(--color-brand-9);
-
 }
