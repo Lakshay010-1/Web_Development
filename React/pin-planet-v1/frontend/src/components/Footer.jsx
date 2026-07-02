@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <h1>Lakshay Goyal</h1>
+            <h1><a href="https://lakshaygoyal-lg.vercel.app/" target="_blank">Lakshay Goyal</a></h1>
             <div className={styles.socialsContainer}>
                 <a href="mailto:lakshaybyte@gmail.com" target="_blank"><EmailIcon /></a>
                 <a href="https://www.linkedin.com/in/goyal-lakshay" target="_blank"><LinkedInIcon /></a>
