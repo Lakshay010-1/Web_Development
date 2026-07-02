@@ -6,10 +6,14 @@ const checkUser = async () => {
         const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/me`, {
             credentials: "include"
         });
+        console.log(response);
         if (!response.ok) {
+            console.log("CHECK USER ERROR");
             return { error: 1 };
         } else {
             const data = await response.json();
+            console.log("CHECK USER FINE");
+            console.log(data);
             return { ...data, error: 0 }
         }
     } catch (error) {
