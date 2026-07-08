@@ -14,11 +14,12 @@ const PORT = process.env.PORT || 5000;
 const FRONTEND_URL = process.env.FRONTEND_URL;
 
 app.use(express.json());
-app.use(cookieParser())
+app.set("trust proxy", 1);
 app.use(cors({
     origin: FRONTEND_URL,
     credentials: true
 }));
+app.use(cookieParser())
 
 app.get("/", (req, res) => {
     res.status(200).json({ message: "API Running" });
