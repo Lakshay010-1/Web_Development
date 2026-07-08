@@ -24,7 +24,7 @@ app.get("/", (req, res) => {
     res.status(200).json({ message: "API Running" });
 });
 
-app.get("/me", authToken, async (req, res) => {
+app.get("/me", authToken, (req, res) => {
     const user = req.user;
     res.json({
         user: {
