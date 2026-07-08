@@ -3,7 +3,12 @@ const User = require("../models/user");
 
 
 async function authToken(req, res, next) {
+    console.log("Cookie header:", req.headers.cookie);
+    console.log("Cookies:", req.cookies);
+
+
     const token = req.cookies.token;
+
 
     if (!token) {
         return res.status(401).json({ message: "Unauthorized" });
