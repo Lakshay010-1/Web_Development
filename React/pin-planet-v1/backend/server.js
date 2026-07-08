@@ -7,7 +7,6 @@ require("dotenv").config();
 const connectDB = require("./config/db");
 const userRoutes = require("./routes/userRoutes");
 const placeRoutes = require("./routes/placeRoutes");
-const User = require("./models/user");
 
 const app = express();
 const router = express.Router();
@@ -26,7 +25,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/me", authToken, async (req, res) => {
-    const user = await User.findById(req.user.userId);
+    const user = req.user;
     res.json({
         user: {
             name: user.name,

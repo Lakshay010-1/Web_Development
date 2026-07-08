@@ -18,7 +18,10 @@ const createUser = async (req, res) => {
             email,
             password: hashedPassword
         });
-        res.status(201).json(user);
+        const userResponse = user.toObject();
+        delete userResponse.password;
+
+        res.status(201).json({ user: userResponse });
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
