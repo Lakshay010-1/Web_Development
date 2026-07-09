@@ -12,9 +12,9 @@ export const projects = [
     {
         id: 1,
         title: "Assets Now",
-        desc: "Developed Assets Now, a financial dashboard using React that integrates multiple APIs to provide real-time and historical data for stocks, cryptocurrencies, forex, and commodities, along with financial news.",
+        desc: "Built a full-stack financial platform for tracking real-time and historical asset prices, managing portfolios and watchlists, analyzing investment performance through P&L and drawdown metrics, and consuming financial news, with secure JWT authentication and MongoDB-backed persistence.",
         homepageImg: "https://res.cloudinary.com/doqufbtqk/image/upload/v1776077990/assets_now_v1_buk1ut.png",
-        technologies: ["React", "APIs", "Material UI", "Axios", "Zustand", "Day.js"],
+        technologies: ["React", "Node.js", "Express", "MongoDB", "JWT", "Bcrypt"],
         sourceCode: "https://github.com/Lakshay010-1/Web_Development/tree/main/React/Assets_Now_v1",
         hostedOnUrl: "https://lakshaygoyal-lg-assets-now-v1.vercel.app/",
         category: "Web App"
